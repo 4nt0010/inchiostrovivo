@@ -1,0 +1,43 @@
+# Quando su main arriva una foto nuova (per esempio con un articolo pubblicato
+# dal pannello), riduce quelle troppo grandi e salva il risultato.
+# Il commit ha [skip ci], così Cloudflare non ricostruisce il sito una seconda volta.
+# Si può anche avviare a mano da GitHub → Actions → "Riduci le immagini" → Run workflow.
+name: Riduci le immagini
+
+on:
+  push:
+    branches: [main]
+    paths: ["public/media/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: riduci-immagini
+  cancel-in-progress: false
+
+jobs:
+  riduci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Installa gli strumenti
+        run: npm install --no-audit --no-fund
+      - name: Riduci le foto troppo grandi
+        run: node scripts/riduci-immagini.mjs
+      - name: Salva le modifiche
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/media
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica."
+          else
+            git commit -m "Immagini ridotte automaticamente [skip ci]"
+            git pull --rebase
+            git push
+          fi
