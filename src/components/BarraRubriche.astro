@@ -1,0 +1,16 @@
+---
+import { articoli, rubriche } from "../lib/contenuti";
+
+interface Props { attiva?: string }
+const { attiva } = Astro.props;
+const tutti = await articoli();
+const lista = (await rubriche()).filter((r) => tutti.some((a) => a.data.rubriche.includes(r.id)));
+---
+<nav class="barra-rubriche" aria-label="Rubriche">
+  <ul>
+    <li><a href="/articoli/" aria-current={!attiva ? "page" : undefined}>Tutti gli articoli</a></li>
+    {lista.map((r) => (
+      <li><a href={`/rubriche/${r.id}/`} aria-current={attiva === r.id ? "page" : undefined}>{r.data.nome}</a></li>
+    ))}
+  </ul>
+</nav>

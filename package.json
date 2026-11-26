@@ -1,0 +1,26 @@
+{
+  "name": "inchiostro-vivo",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist && node scripts/ottimizza-immagini.mjs",
+    "preview": "astro preview",
+    "migra-immagini": "node scripts/migra-immagini-wix.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.10",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.6",
+    "@fontsource-variable/eb-garamond": "^5.3.0",
+    "@fontsource-variable/figtree": "^5.3.0",
+    "astro": "^7.4.13",
+    "pagefind": "^1.6.0",
+    "sharp": "^0.35.5",
+    "unist-util-visit": "^5.2.0"
+  }
+}

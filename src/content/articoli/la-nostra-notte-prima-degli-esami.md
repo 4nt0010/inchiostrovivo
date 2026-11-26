@@ -1,0 +1,16 @@
+---
+title: "La nostra notte prima degli esami"
+date: 2026-06-17T15:00:19.015Z
+autori:
+  - "Filippo Sforza"
+rubriche:
+  - la-nostra-scuola
+copertina: "https://static.wixstatic.com/media/0a0d0f_c8d1b6d2e80944a19441123204428aa1~mv2.png"
+alt_copertina: ""
+---
+
+“Notte prima degli esami, notte di polizia, certo qualcuno te lo sei portato via, notte di mamme e di papà col biberon in mano, notte di nonne alla finestra, ma questa notte è ancora nostra,”
+
+Passano gli anni ma il ritornello di questa canzone di Venditti non scompare mai, e di generazione in generazione si attendono gli esami con ansia e paura toccando il culmine appunto la notte prima degli esami. Ma la paura nasce già da prima di solito all’inizio del quinto anno, per i più esagerati anche dal quarto anno si inizia a percepire una leggera ansia. Ansia che cresce in maniera esponenziale lungo tutto l’ultimo anno per poi perire una volta finiti gli esami. Ma noi ragazzi di colpe ne abbiamo poche perché se siamo così timorosi dell’esame è anche grazie alle continue intimidazione da parte dei nostri genitori e dei prof che quasi quotidianamente ci ripetono di studiare e studiare. Ci creiamo dunque un idea di esame difficile, pieno di inganni e argomenti e a cui forse non è sufficiente un anno per prepararsi. Quest’anno poi l’ansia ha toccato i suoi punti massimi a gennaio quando il ministero ha rivelato le 4 materie d’esame secondo la nuova formula ed ha rivelato i professori interni di queste 4. Per il liceo scientifico si sono scelte come materie da portare all’esame orale italiano,matematica, storia,scienze, per il liceo linguistico italiano, lingua straniera 1, lingua straniera 2, scienze naturali, e infine per il classico: italiano, latino, storia e matematica. Qualche mese dopo sono uscite le modalità d’esame portandoci sempre più dinanzi alla consapevolezza di quello che andremo a fare. Giunti all’ultimo mese di scuola non è facile far fronte alle emozioni che in queste situazioni giocano un ruolo fondamentale: il voler restare a scuola per altri 5 anni, la nostalgia per i professori che non rivedremo più, e il rimpianto di quella serenità che la scuola da al contrario dell’università e del mondo del lavoro e infine il rimorso di non poter vedere più tutti i giorni il volto di quella ragazza o di quel ragazzo che rendeva le giornate scolastiche più leggere. Ed è per questo che i ragazzi provano a viversi al meglio ogni secondo combattendo continuamente con il veloce tempo.
+
+ed è un lampo che da essere pieni di pensieri con la testa appoggiata sul banco ti ritrovi ad un giorno dall’esame che per alcuni diviene il momento di dare il 1000x1000 provando a finire di ripetere tutto contro i limiti della realtà, o che per altri si trasforma in un giorno di riposo considerando buono ciò che fatto. Ma uno dei momenti peggiori e quando si aspetta il turno successivo nel quale si svolgerà l’esame e fissi tremando il pavimento scorgendo ogni tanto lo sguardo dei tuoi compagni provando a incoraggiarti ma che si rivela inutile vedendoli addirittura più intimoriti di te stesso. Arriva dunque il momento in cui tocca a te, ti alzi, dai l’ultimo sguardo al pavimento ed entri nell’aula di colloquio sapendo che nel bene o nel male qualcosa accadrà.

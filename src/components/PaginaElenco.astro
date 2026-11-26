@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import Elenco from "./Elenco.astro";
+import BarraRubriche from "./BarraRubriche.astro";
+import type { Articolo } from "../lib/contenuti";
+
+interface Props {
+  titolo: string;
+  titoloSeo?: string;
+  descrizione?: string;
+  articoli: Articolo[];
+  precedente?: string;
+  successiva?: string;
+  rubrica?: string;
+  barra?: boolean;
+  jsonld?: object | object[];
+}
+const p = Astro.props;
+---
+<Base titolo={p.titoloSeo ?? p.titolo} descrizione={p.descrizione} jsonld={p.jsonld}>
+  <div class="contenitore">
+    <header class="testa-blog">
+      <h1 class="tratto tratto-sx">{p.titolo}</h1>
+      {p.descrizione && <p>{p.descrizione}</p>}
+    </header>
+    {p.barra !== false ? <BarraRubriche attiva={p.rubrica} /> : <div style="height:2.25rem" />}
+    {p.articoli.length > 0 ? (
+      <Elenco articoli={p.articoli} />
+    ) : (
+      <p class="vuoto">Qui non ci sono ancora articoli. <a href="/articoli/">Leggi gli articoli più recenti</a>.</p>
+    )}
+    {(p.precedente || p.successiva) && (
+      <nav class="paginazione" aria-label="Pagine">
+        {p.precedente ? <a href={p.precedente} rel="prev">Articoli più recenti</a> : <span />}
+        {p.successiva ? <a href={p.successiva} rel="next">Articoli meno recenti</a> : <span />}
+      </nav>
+    )}
+  </div>
+</Base>

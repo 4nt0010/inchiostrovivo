@@ -1,0 +1,18 @@
+---
+import { SITO } from "../../sito.config.mjs";
+
+interface Props { livello?: "h1" | "h2" }
+const { livello = "h2" } = Astro.props;
+const Titolo = livello;
+const [utente, dominio] = SITO.email.split("@");
+---
+<section class="contatti" id="contatti">
+  <div class="contatti-pannello">
+    <Titolo>Contattaci</Titolo>
+    <address>
+      {SITO.indirizzo}<br />
+      {SITO.scuola}, {SITO.citta}<br />
+      <a href={`mailto:${SITO.email}`}>{utente}@<wbr />{dominio}</a>
+    </address>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+---
+import Base from "../../layouts/Base.astro";
+import { SITO } from "../../../sito.config.mjs";
+import { articoli, rubriche } from "../../lib/contenuti";
+
+const tutti = await articoli();
+const lista = (await rubriche())
+  .map((r) => ({ r, n: tutti.filter((a) => a.data.rubriche.includes(r.id)).length }))
+  .filter((x) => x.n > 0);
+---
+<Base titolo="Rubriche" descrizione={`Le rubriche di ${SITO.nome}: ${lista.map((x) => x.r.data.nome).join(", ")}.`}>
+  <div class="contenitore">
+    <header class="pagina">
+      <h1 class="tratto tratto-sx">Rubriche</h1>
+      <p>Gli articoli divisi per argomento. Accanto a ogni rubrica c'è il numero di articoli pubblicati.</p>
+    </header>
+    <ul class="indice">
+      {lista.map(({ r, n }) => <li><a href={`/rubriche/${r.id}/`}>{r.data.nome}<span class="conta">{n}</span></a></li>)}
+    </ul>
+  </div>
+</Base>

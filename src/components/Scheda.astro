@@ -1,0 +1,29 @@
+---
+import { immagine, srcset } from "../lib/immagini.mjs";
+import { data, elencoNomi, minutiLettura, type Articolo, type Rubrica } from "../lib/contenuti";
+
+interface Props {
+  articolo: Articolo;
+  rubriche: Map<string, Rubrica>;
+  livello?: "h2" | "h3";
+}
+const { articolo: a, rubriche, livello = "h2" } = Astro.props;
+const Titolo = livello;
+const href = `/articoli/${a.id}/`;
+const prima = a.data.rubriche.map((r) => rubriche.get(r)).find(Boolean);
+---
+<li class="scheda">
+  {a.data.copertina && (
+    <img src={immagine(a.data.copertina, 800)} srcset={srcset(a.data.copertina, 1600)} sizes="(min-width: 64rem) 23rem, (min-width: 40rem) 50vw, 100vw" alt="" loading="lazy" decoding="async" style={`view-transition-name: c-${a.id}`} />
+  )}
+  <div class="scheda-interno">
+    <p class="scheda-meta">
+      {elencoNomi(a.data.autori)}<br />
+      <time datetime={a.data.date.toISOString()}>{data(a.data.date)}</time>, lettura {minutiLettura(a)} min
+    </p>
+    <div>
+      {prima && <p class="scheda-rubrica"><a href={`/rubriche/${prima.id}/`}>{prima.data.nome}</a></p>}
+      <Titolo style={`view-transition-name: t-${a.id}`}><a href={href}>{a.data.title}</a></Titolo>
+    </div>
+  </div>
+</li>

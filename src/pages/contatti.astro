@@ -1,0 +1,11 @@
+---
+import Base from "../layouts/Base.astro";
+import Contatti from "../components/Contatti.astro";
+import { SITO } from "../../sito.config.mjs";
+---
+<Base titolo="Contatti" descrizione={`Come contattare la redazione di ${SITO.nome}, ${SITO.scuola} di ${SITO.citta}.`}>
+  <Contatti livello="h1" />
+</Base>
+<style is:global>
+  .contatti { margin-top: 0.5rem; }
+</style>

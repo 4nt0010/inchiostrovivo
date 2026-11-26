@@ -1,0 +1,23 @@
+---
+import Firma from "./Firma.astro";
+import { immagine, srcset } from "../lib/immagini.mjs";
+import { estratto, type Articolo, type Rubrica } from "../lib/contenuti";
+
+interface Props { articolo: Articolo; rubriche?: Map<string, Rubrica> }
+const { articolo: a, rubriche } = Astro.props;
+const prima = rubriche ? a.data.rubriche.map((r) => rubriche.get(r)).find(Boolean) : undefined;
+const href = `/articoli/${a.id}/`;
+---
+<li class="riga">
+  <div class="riga-img">
+    {prima && <a class="riga-rubrica" href={`/rubriche/${prima.id}/`}>{prima.data.nome}</a>}
+    {a.data.copertina && (
+      <img src={immagine(a.data.copertina, 800)} srcset={srcset(a.data.copertina, 1600)} sizes="(min-width: 46rem) 27rem, 100vw" alt="" loading="lazy" decoding="async" style={`view-transition-name: c-${a.id}`} />
+    )}
+  </div>
+  <div class="riga-testo">
+    <Firma autori={a.data.autori} data={a.data.date} />
+    <h3 style={`view-transition-name: t-${a.id}`}><a href={href}>{a.data.title}</a></h3>
+    <p class="riga-estratto">{estratto(a, 260)}</p>
+  </div>
+</li>

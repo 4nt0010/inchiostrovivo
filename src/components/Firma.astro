@@ -1,0 +1,24 @@
+---
+import { slugify, data } from "../lib/contenuti";
+
+interface Props {
+  autori: string[];
+  data?: Date;
+  minuti?: number;
+  link?: boolean;
+}
+const { autori, data: giorno, minuti, link = false } = Astro.props;
+const iniziale = (autori[0] ?? "R").trim().charAt(0).toUpperCase();
+---
+<div class="firma">
+  <span class="firma-iniziale" aria-hidden="true">{iniziale}</span>
+  <span>
+    <span class="firma-nome">
+      {autori.map((n, i) => (
+        <>{i > 0 && (i === autori.length - 1 ? " e " : ", ")}{link ? <a href={`/autori/${slugify(n)}/`}>{n}</a> : n}</>
+      ))}
+    </span>
+    {giorno && <><br /><time datetime={giorno.toISOString()}>{data(giorno)}</time></>}
+    {minuti && <>, lettura {minuti} min</>}
+  </span>
+</div>

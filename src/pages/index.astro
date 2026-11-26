@@ -1,0 +1,122 @@
+---
+import Base from "../layouts/Base.astro";
+import Riga from "../components/Riga.astro";
+import Contatti from "../components/Contatti.astro";
+import { SITO } from "../../sito.config.mjs";
+import { articoli, mappaRubriche } from "../lib/contenuti";
+
+const tutti = await articoli();
+const evidenza = tutti.slice(0, 3);
+const mappa = await mappaRubriche();
+
+const passi = [
+  {
+    titolo: "Di cosa si occupa?",
+    testo:
+      "Inchiostro Vivo è un'esperienza di educazione alla scrittura e di relazione, dove gli studenti sperimentano, crescono e sviluppano competenze utili anche per il loro orientamento futuro.",
+  },
+  {
+    titolo: "Di cosa scrive?",
+    testo:
+      "Il progetto offre rubriche che spaziano dall'attualità alle iniziative scolastiche, dalla storia al benessere, fino alla satira, alle interviste, al teatro, alla musica e all'arte, rappresentando la voce della comunità scolastica.",
+  },
+  {
+    titolo: "Come è nato?",
+    testo: `Nato nel ${SITO.fondazione} come giornale cartaceo, è poi diventato digitale e oggi si rinnova come blog per integrare contenuti multimediali e rispondere alle nuove modalità di lettura dei giovani.`,
+  },
+];
+
+const jsonld = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITO.nome,
+    url: SITO.url + "/",
+    inLanguage: "it-IT",
+    description: SITO.descrizione,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${SITO.url}/cerca/?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    name: SITO.nome,
+    url: SITO.url + "/",
+    logo: `${SITO.url}/logo.png`,
+    email: SITO.email,
+    foundingDate: String(SITO.fondazione),
+    parentOrganization: {
+      "@type": "HighSchool",
+      name: `${SITO.scuola} di ${SITO.citta}`,
+      url: SITO.scuolaSito,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: SITO.indirizzo,
+        postalCode: SITO.cap,
+        addressLocality: SITO.citta,
+        addressRegion: SITO.provincia,
+        addressCountry: "IT",
+      },
+    },
+  },
+];
+---
+<Base jsonld={jsonld}>
+  <section class="copertina">
+    <svg class="copertina-tratto" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="inchiostro" x1="0" y1="0" x2="1" y2="0.4">
+          <stop offset="0" stop-color="#2aa8e0" />
+          <stop offset="0.55" stop-color="#1f6fc5" />
+          <stop offset="1" stop-color="#1c3b8f" />
+        </linearGradient>
+      </defs>
+      <path pathLength="1" d="M-40 470 C 160 360, 300 520, 470 420 S 760 160, 900 250 S 1080 470, 1250 300" />
+      <path pathLength="1" class="sottile" d="M-40 520 C 200 430, 340 560, 520 470 S 800 250, 960 320 S 1120 500, 1250 380" />
+    </svg>
+    <div class="copertina-interno">
+      <form class="cerca-pillola" action="/cerca/" method="get" role="search" data-ricerca-rapida>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <label class="nascosto" for="cerca-home">Cerca negli articoli</label>
+        <input id="cerca-home" name="q" type="search" placeholder="Cerca" />
+        <button type="submit">Vai</button>
+      </form>
+      <div class="scheda-logo">
+        <h1><img src="/logo.webp" alt={`${SITO.nome}, ${SITO.motto}`} width="550" height="196" fetchpriority="high" /></h1>
+        <p>Il blog della redazione studentesca del {SITO.scuola} di {SITO.citta}</p>
+        <a class="pulsante" href="/articoli/">Vai agli articoli!</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sezione">
+    <div class="contenitore">
+      <h2 class="sezione-titolo tratto">Ultimi articoli</h2>
+      <ul class="righe">
+        {evidenza.map((a) => <Riga articolo={a} rubriche={mappa} />)}
+      </ul>
+      <p class="sezione-piede"><a class="pulsante" href="/articoli/">Tutti gli articoli</a></p>
+    </div>
+  </section>
+
+  <section class="sezione missione">
+    <svg class="missione-tratto" viewBox="0 0 800 300" aria-hidden="true"><path d="M10 240 C 150 120, 260 280, 400 170 S 640 40, 790 120" /></svg>
+    <div class="contenitore">
+      <h2 class="sezione-titolo tratto">Cosa fa Inchiostro Vivo?</h2>
+      <ol class="passi">
+        {passi.map((p, i) => (
+          <li class="passo">
+            <span class="passo-numero" aria-hidden="true">{i + 1}</span>
+            <h3>{p.titolo}</h3>
+            <p>{p.testo}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <Contatti />
+</Base>

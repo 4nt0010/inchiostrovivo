@@ -1,0 +1,25 @@
+---
+import PaginaElenco from "../../components/PaginaElenco.astro";
+import { SITO } from "../../../sito.config.mjs";
+import { articoli, autoriDi } from "../../lib/contenuti";
+
+export async function getStaticPaths() {
+  const autori = autoriDi(await articoli());
+  return autori.map((au) => ({ params: { slug: au.slug }, props: { au } }));
+}
+const { au } = Astro.props;
+const n = au.articoli.length;
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: { "@type": au.nome === "Redazione" ? "Organization" : "Person", name: au.nome, url: `${SITO.url}/autori/${au.slug}/` },
+};
+---
+<PaginaElenco
+  titolo={au.nome}
+  titoloSeo={`${au.nome}: articoli`}
+  descrizione={`${n === 1 ? "L'articolo" : `Gli ${n} articoli`} di ${au.nome} per ${SITO.nome}.`}
+  articoli={au.articoli}
+  barra={false}
+  jsonld={jsonld}
+/>

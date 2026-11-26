@@ -1,0 +1,117 @@
+---
+import "@fontsource-variable/eb-garamond";
+import "@fontsource-variable/eb-garamond/wght-italic.css";
+import "@fontsource-variable/figtree";
+import "../styles/globale.css";
+import Seo from "../components/Seo.astro";
+import Ricerca from "../components/Ricerca.astro";
+import { SITO } from "../../sito.config.mjs";
+
+interface Props {
+  titolo?: string;
+  descrizione?: string;
+  immagine?: string;
+  tipo?: "website" | "article";
+  pubblicato?: Date;
+  aggiornato?: Date;
+  noindex?: boolean;
+  jsonld?: object | object[];
+  sfondo?: string; // immagine sfocata dietro al foglio
+  lettura?: boolean; // barra di avanzamento della lettura
+}
+const { sfondo = "/sfondo-sfocato.webp", lettura = false } = Astro.props;
+const percorso = Astro.url.pathname;
+const voci = [
+  { href: "/", nome: "Home" },
+  { href: "/articoli/", nome: "Articoli" },
+  { href: "/chi-siamo/", nome: "Chi siamo" },
+  { href: "/contatti/", nome: "Contatti" },
+];
+const attiva = (href: string) =>
+  href === "/" ? percorso === "/" : percorso.startsWith(href) || (href === "/articoli/" && percorso.startsWith("/rubriche/"));
+const anno = new Date().getFullYear();
+const iconaCerca = `<svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>`;
+---
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dfe4ec" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" title={`${SITO.nome}: ultimi articoli`} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <Seo {...Astro.props} />
+  </head>
+  <body class:list={[{ "pagina-home": percorso === "/" }]}>
+    <div class="fondale" aria-hidden="true" style={`--fondale: url("${sfondo}")`}></div>
+    {lettura && <div class="lettura" aria-hidden="true"><span></span></div>}
+    <a class="salta" href="#contenuto">Vai al contenuto</a>
+
+    <div class="foglio">
+      <header class="testata">
+        <nav class="pillole" aria-label="Menu principale">
+          <a class="pillola pillola-logo" href="/" aria-label={`${SITO.nome}, home`}>
+            <img src="/logo.webp" alt={SITO.nome} width="550" height="196" />
+          </a>
+          <ul class="pillole-voci">
+            {voci.map((v) => <li><a class="pillola" href={v.href} aria-current={attiva(v.href) ? "page" : undefined}>{v.nome}</a></li>)}
+          </ul>
+          <a class="pillola pillola-cerca" href="/cerca/" aria-label="Cerca" data-apri-ricerca aria-current={attiva("/cerca/") ? "page" : undefined}>
+            <Fragment set:html={iconaCerca} /><span>Cerca</span><kbd>/</kbd>
+          </a>
+          <details class="pillole-menu">
+            <summary class="pillola">Menu</summary>
+            <ul>
+              {voci.map((v) => <li><a href={v.href} aria-current={attiva(v.href) ? "page" : undefined}>{v.nome}</a></li>)}
+            </ul>
+          </details>
+        </nav>
+      </header>
+
+      <main id="contenuto">
+        <slot />
+      </main>
+
+      <footer class="piede">
+        <div class="piede-interno">
+          <img src="/logo.webp" alt="" width="550" height="196" loading="lazy" />
+          <ul>
+            <li><a href="/articoli/">Articoli</a></li>
+            <li><a href="/rubriche/">Rubriche</a></li>
+            <li><a href="/autori/">Autori</a></li>
+            <li><a href="/rss.xml">RSS</a></li>
+          </ul>
+          <p>© {anno} {SITO.nome}, {SITO.scuola} di {SITO.citta}</p>
+        </div>
+      </footer>
+    </div>
+
+    <Ricerca />
+
+    {lettura && (
+      <script>
+        const barra = document.querySelector<HTMLElement>(".lettura span");
+        const testo = document.querySelector<HTMLElement>(".testo");
+        if (barra && testo) {
+          const aggiorna = () => {
+            const r = testo.getBoundingClientRect();
+            const p = Math.min(1, Math.max(0, (innerHeight * 0.6 - r.top) / r.height));
+            barra.style.transform = `scaleX(${p})`;
+          };
+          addEventListener("scroll", aggiorna, { passive: true });
+          aggiorna();
+        }
+      </script>
+    )}
+    <script>
+      // Chiude il menu mobile quando si sceglie una voce o si tocca fuori
+      const menu = document.querySelector<HTMLDetailsElement>(".pillole-menu");
+      document.addEventListener("click", (e) => {
+        if (menu?.open && !menu.contains(e.target as Node)) menu.open = false;
+      });
+    </script>
+  </body>
+</html>

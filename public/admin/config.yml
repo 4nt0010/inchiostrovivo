@@ -1,0 +1,100 @@
+# Pannello della redazione (Decap CMS)
+# Da completare: repo (utente/nome-repository) e base_url (indirizzo del sito).
+
+backend:
+  name: github
+  repo: 4nt0010/inchiostrovivo
+  branch: main
+  base_url: https://www.inchiostrovivotobelive.it
+  auth_endpoint: api/auth
+  commit_messages:
+    create: "Nuovo {{collection}}: {{slug}}"
+    update: "Modifica {{collection}}: {{slug}}"
+    delete: "Eliminato {{collection}}: {{slug}}"
+    uploadMedia: "Caricata immagine {{path}}"
+    deleteMedia: "Eliminata immagine {{path}}"
+
+# Bozza → In revisione → Pronto: un docente controlla prima della pubblicazione
+publish_mode: editorial_workflow
+
+locale: it
+site_url: https://www.inchiostrovivotobelive.it
+display_url: https://www.inchiostrovivotobelive.it
+logo_url: /logo.webp
+
+media_folder: public/media
+public_folder: /media
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: articoli
+    label: Articoli
+    label_singular: Articolo
+    description: "Scrivi un nuovo articolo con il pulsante in alto. Quando è pronto, spostalo in «In revisione»."
+    folder: src/content/articoli
+    create: true
+    slug: "{{title}}"
+    preview_path: "articoli/{{slug}}/"
+    sortable_fields: ["date", "title"]
+    summary: "{{title}} ({{date | date('DD/MM/YYYY')}})"
+    view_filters:
+      - label: In evidenza
+        field: in_evidenza
+        pattern: true
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data di pubblicazione", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
+      - label: "Autori"
+        name: "autori"
+        widget: "list"
+        hint: "Nome e cognome di chi ha scritto l'articolo, uno per riga."
+        field: { label: "Nome e cognome", name: "nome", widget: "string" }
+        default: ["Redazione"]
+      - label: "Rubriche"
+        name: "rubriche"
+        widget: "relation"
+        collection: "rubriche"
+        search_fields: ["nome"]
+        value_field: "{{slug}}"
+        display_fields: ["nome"]
+        multiple: true
+        required: false
+      - { label: "Immagine di copertina", name: "copertina", widget: "image", required: false, choose_url: false }
+      - { label: "Descrizione dell'immagine", name: "alt_copertina", widget: "string", required: false, hint: "Cosa si vede nella foto, in poche parole. Serve a chi usa un lettore di schermo e a Google." }
+      - { label: "Sommario", name: "descrizione", widget: "text", required: false, hint: "Una o due frasi che riassumono l'articolo (massimo 160 caratteri). Appare sotto il titolo e nei risultati di Google." }
+      - { label: "In evidenza", name: "in_evidenza", widget: "boolean", required: false, default: false }
+      - label: "Testo"
+        name: "body"
+        widget: "markdown"
+        buttons: ["bold", "italic", "link", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]
+        editor_components: ["image"]
+        hint: "Per inserire un video di YouTube incolla il link da solo su una riga. Per una didascalia scrivi una riga in corsivo subito sotto la foto."
+
+  - name: rubriche
+    label: Rubriche
+    label_singular: Rubrica
+    folder: src/content/rubriche
+    format: json
+    extension: json
+    create: true
+    slug: "{{nome}}"
+    identifier_field: nome
+    fields:
+      - { label: "Nome", name: "nome", widget: "string" }
+      - { label: "Descrizione", name: "descrizione", widget: "text", required: false, hint: "Appare in cima alla pagina della rubrica e nei risultati di Google." }
+      - { label: "Ordine", name: "ordine", widget: "number", value_type: "int", default: 99, hint: "Le rubriche con numero più basso compaiono prima." }
+
+  - name: pagine
+    label: Pagine
+    files:
+      - name: chi-siamo
+        label: Chi siamo
+        file: src/content/pagine/chi-siamo.md
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Descrizione per Google", name: "descrizione", widget: "text", required: false }
+          - { label: "Testo", name: "body", widget: "markdown" }

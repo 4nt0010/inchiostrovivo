@@ -1,0 +1,18 @@
+---
+import Base from "../../layouts/Base.astro";
+import { SITO } from "../../../sito.config.mjs";
+import { articoli, autoriDi } from "../../lib/contenuti";
+
+const autori = autoriDi(await articoli());
+---
+<Base titolo="Autori" descrizione={`Chi scrive su ${SITO.nome}: le ragazze, i ragazzi e i docenti della redazione.`}>
+  <div class="contenitore">
+    <header class="pagina">
+      <h1 class="tratto tratto-sx">Autori</h1>
+      <p>Chi scrive su {SITO.nome}. Accanto a ogni nome c'è il numero di articoli firmati.</p>
+    </header>
+    <ul class="indice">
+      {autori.map((au) => <li><a href={`/autori/${au.slug}/`}>{au.nome}<span class="conta">{au.articoli.length}</span></a></li>)}
+    </ul>
+  </div>
+</Base>

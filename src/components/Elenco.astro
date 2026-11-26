@@ -1,0 +1,14 @@
+---
+import Scheda from "./Scheda.astro";
+import { mappaRubriche, type Articolo } from "../lib/contenuti";
+
+interface Props {
+  articoli: Articolo[];
+  livello?: "h2" | "h3";
+}
+const { articoli, livello = "h2" } = Astro.props;
+const rubriche = await mappaRubriche();
+---
+<ul class="griglia">
+  {articoli.map((a) => <Scheda articolo={a} rubriche={rubriche} livello={livello} />)}
+</ul>

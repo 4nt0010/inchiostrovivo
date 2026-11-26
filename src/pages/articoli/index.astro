@@ -1,0 +1,15 @@
+---
+import PaginaElenco from "../../components/PaginaElenco.astro";
+import { SITO } from "../../../sito.config.mjs";
+import { articoli } from "../../lib/contenuti";
+
+const tutti = await articoli();
+const n = SITO.articoliPerPagina;
+const pagine = Math.ceil(tutti.length / n);
+---
+<PaginaElenco
+  titolo="Articoli"
+  descrizione={`${tutti.length} articoli scritti dalla redazione di ${SITO.nome}, dal più recente.`}
+  articoli={tutti.slice(0, n)}
+  successiva={pagine > 1 ? "/articoli/pagina/2/" : undefined}
+/>

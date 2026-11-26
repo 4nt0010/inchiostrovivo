@@ -1,0 +1,25 @@
+---
+import PaginaElenco from "../../components/PaginaElenco.astro";
+import { SITO } from "../../../sito.config.mjs";
+import { articoli, rubriche } from "../../lib/contenuti";
+
+export async function getStaticPaths() {
+  const tutti = await articoli();
+  return (await rubriche()).map((r) => ({
+    params: { slug: r.id },
+    props: { r, lista: tutti.filter((a) => a.data.rubriche.includes(r.id)) },
+  }));
+}
+const { r, lista } = Astro.props;
+const descrizione =
+  r.data.descrizione || `Gli articoli della rubrica ${r.data.nome} di ${SITO.nome}, il blog degli studenti del ${SITO.scuola} di ${SITO.citta}.`;
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: r.data.nome,
+  description: descrizione,
+  url: `${SITO.url}/rubriche/${r.id}/`,
+  isPartOf: { "@type": "WebSite", name: SITO.nome, url: SITO.url + "/" },
+};
+---
+<PaginaElenco titolo={r.data.nome} titoloSeo={`${r.data.nome}: articoli`} descrizione={descrizione} articoli={lista} rubrica={r.id} jsonld={jsonld} />

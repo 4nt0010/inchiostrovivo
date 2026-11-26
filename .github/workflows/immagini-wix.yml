@@ -1,0 +1,50 @@
+# Copia nel repository le immagini ancora ospitate su Wix.
+# Parte da sola al primo caricamento; si può anche avviare a mano da
+# GitHub → Actions → "Sposta le immagini da Wix" → Run workflow.
+name: Sposta le immagini da Wix
+
+on:
+  push:
+    branches: [main]
+    paths: ["src/content/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: immagini-wix
+  cancel-in-progress: false
+
+jobs:
+  migra:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Controlla se ci sono link a Wix
+        id: controllo
+        run: |
+          if grep -rqs "static.wixstatic.com/media" src/content; then
+            echo "trovati=si" >> "$GITHUB_OUTPUT"
+          else
+            echo "trovati=no" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Scarica le immagini e aggiorna gli articoli
+        if: steps.controllo.outputs.trovati == 'si'
+        run: node scripts/migra-immagini-wix.mjs
+      - name: Salva le modifiche
+        if: steps.controllo.outputs.trovati == 'si'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/media src/content
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica."
+          else
+            git commit -m "Immagini spostate da Wix nel sito"
+            git pull --rebase
+            git push
+          fi

@@ -1,0 +1,30 @@
+---
+import PaginaElenco from "../../../components/PaginaElenco.astro";
+import { SITO } from "../../../../sito.config.mjs";
+import { articoli } from "../../../lib/contenuti";
+
+export async function getStaticPaths() {
+  const tutti = await articoli();
+  const n = SITO.articoliPerPagina;
+  const pagine = Math.ceil(tutti.length / n);
+  return Array.from({ length: Math.max(0, pagine - 1) }, (_, i) => {
+    const p = i + 2;
+    return {
+      params: { pagina: String(p) },
+      props: {
+        lista: tutti.slice((p - 1) * n, p * n),
+        p,
+        pagine,
+      },
+    };
+  });
+}
+const { lista, p, pagine } = Astro.props;
+---
+<PaginaElenco
+  titolo={`Articoli, pagina ${p}`}
+  titoloSeo={`Articoli, pagina ${p} di ${pagine}`}
+  articoli={lista}
+  precedente={p === 2 ? "/articoli/" : `/articoli/pagina/${p - 1}/`}
+  successiva={p < pagine ? `/articoli/pagina/${p + 1}/` : undefined}
+/>

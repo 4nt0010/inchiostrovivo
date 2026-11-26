@@ -1,0 +1,141 @@
+---
+// Ricerca istantanea: i risultati compaiono mentre si scrive.
+// Si apre con il pulsante "Cerca", con il tasto / oppure Ctrl+K (⌘K su Mac).
+// Usa l'indice di Pagefind creato durante la build: niente server, funziona offline.
+interface Props { incorporata?: boolean }
+const { incorporata = false } = Astro.props;
+---
+{incorporata ? (
+  <div class="ricerca-pannello ricerca-incorporata" data-ricerca>
+    <div class="ricerca-campo">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <label class="nascosto" for="ricerca-pagina">Cerca negli articoli</label>
+      <input id="ricerca-pagina" type="search" placeholder="Cerca negli articoli" autocomplete="off" data-ricerca-input />
+    </div>
+    <ul class="ricerca-risultati" data-ricerca-risultati role="listbox" aria-label="Risultati"></ul>
+  </div>
+) : (
+  <dialog class="ricerca-dialogo" id="ricerca" aria-label="Cerca negli articoli">
+    <div class="ricerca-pannello" data-ricerca>
+      <div class="ricerca-campo">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <label class="nascosto" for="ricerca-dialogo-input">Cerca negli articoli</label>
+        <input id="ricerca-dialogo-input" type="search" placeholder="Cerca negli articoli" autocomplete="off" data-ricerca-input />
+        <button type="button" class="ricerca-chiudi" data-ricerca-chiudi aria-label="Chiudi"><kbd>Esc</kbd></button>
+      </div>
+      <ul class="ricerca-risultati" data-ricerca-risultati role="listbox" aria-label="Risultati"></ul>
+    </div>
+  </dialog>
+)}
+
+<script>
+  type Risultato = { url: string; excerpt: string; meta: { title?: string; image?: string; rubrica?: string } };
+  let pagefind: any = null;
+  async function carica() {
+    if (pagefind) return pagefind;
+    const percorso = "/pagefind/pagefind.js";
+    pagefind = await import(/* @vite-ignore */ percorso);
+    await pagefind.init();
+    return pagefind;
+  }
+
+  const VUOTO = (q: string) => `Nessun articolo contiene “${q}”. Prova con un'altra parola.`;
+
+  function collega(radice: HTMLElement) {
+    if (radice.dataset.collegato) return;
+    radice.dataset.collegato = "1";
+    const input = radice.querySelector<HTMLInputElement>("[data-ricerca-input]")!;
+    const lista = radice.querySelector<HTMLUListElement>("[data-ricerca-risultati]")!;
+    let attivo = -1;
+    let ultima = "";
+
+    const evidenzia = (i: number) => {
+      const voci = [...lista.querySelectorAll<HTMLAnchorElement>("a")];
+      voci.forEach((v, j) => v.setAttribute("aria-selected", String(j === i)));
+      attivo = i;
+      voci[i]?.scrollIntoView({ block: "nearest" });
+    };
+
+    async function cerca() {
+      const q = input.value.trim();
+      ultima = q;
+      if (!q) { lista.innerHTML = ""; radice.classList.remove("ha-risultati"); return; }
+      const pf = await carica();
+      const r = await pf.debouncedSearch(q, {}, 120);
+      if (r === null || q !== ultima) return; // superata da una ricerca più recente
+      const dati: Risultato[] = await Promise.all(r.results.slice(0, 8).map((x: any) => x.data()));
+      if (q !== ultima) return;
+      radice.classList.add("ha-risultati");
+      if (!dati.length) {
+        lista.innerHTML = `<li class="ricerca-vuoto">${VUOTO(q.replace(/[<>&]/g, ""))}</li>`;
+        return;
+      }
+      lista.innerHTML = dati
+        .map(
+          (d, i) => `<li><a href="${d.url}" role="option" aria-selected="false" style="--i:${i}">
+            ${d.meta.image ? `<img src="${d.meta.image}" alt="" loading="lazy" />` : `<span class="ricerca-segnaposto"></span>`}
+            <span><strong>${d.meta.title ?? ""}</strong><span class="ricerca-estratto">${d.excerpt}</span></span>
+          </a></li>`,
+        )
+        .join("");
+      attivo = -1;
+    }
+
+    input.addEventListener("input", cerca);
+    input.addEventListener("keydown", (e) => {
+      const n = lista.querySelectorAll("a").length;
+      if (e.key === "ArrowDown" && n) { e.preventDefault(); evidenzia((attivo + 1) % n); }
+      else if (e.key === "ArrowUp" && n) { e.preventDefault(); evidenzia((attivo - 1 + n) % n); }
+      else if (e.key === "Enter") {
+        const a = lista.querySelectorAll<HTMLAnchorElement>("a")[attivo < 0 ? 0 : attivo];
+        if (a) { e.preventDefault(); location.href = a.href; }
+      }
+    });
+    input.addEventListener("focus", () => carica(), { once: true });
+    return { input, cerca };
+  }
+
+  // Pagina /cerca/: legge ?q= dall'indirizzo
+  document.querySelectorAll<HTMLElement>(".ricerca-incorporata").forEach((r) => {
+    const c = collega(r);
+    const q = new URLSearchParams(location.search).get("q");
+    if (c && q) { c.input.value = q; c.cerca(); }
+  });
+
+  // Finestra di ricerca
+  const dialogo = document.querySelector<HTMLDialogElement>("#ricerca");
+  if (dialogo) {
+    const pannello = dialogo.querySelector<HTMLElement>("[data-ricerca]")!;
+    const c = collega(pannello)!;
+    const apri = (testo = "") => {
+      if (!dialogo.open) dialogo.showModal();
+      c.input.focus();
+      if (testo) {
+        c.input.value = testo;
+        c.input.setSelectionRange(testo.length, testo.length);
+      } else {
+        c.input.select();
+      }
+      if (c.input.value) c.cerca();
+    };
+    document.addEventListener("click", (e) => {
+      const t = (e.target as HTMLElement).closest<HTMLElement>("[data-apri-ricerca]");
+      if (t) { e.preventDefault(); apri(); }
+    });
+    document.addEventListener("keydown", (e) => {
+      const campo = (e.target as HTMLElement).closest("input, textarea, [contenteditable]");
+      if ((e.key === "k" && (e.metaKey || e.ctrlKey)) || (e.key === "/" && !campo)) {
+        e.preventDefault();
+        apri();
+      }
+    });
+    dialogo.querySelector("[data-ricerca-chiudi]")?.addEventListener("click", () => dialogo.close());
+    dialogo.addEventListener("click", (e) => { if (e.target === dialogo) dialogo.close(); });
+    // Campo "Cerca" della home: apre la finestra con il testo già scritto
+    document.querySelectorAll<HTMLFormElement>("form[data-ricerca-rapida]").forEach((f) => {
+      const campo = f.querySelector<HTMLInputElement>("input")!;
+      f.addEventListener("submit", (e) => { e.preventDefault(); apri(campo.value); });
+      campo.addEventListener("input", () => { apri(campo.value); campo.value = ""; });
+    });
+  }
+</script>
