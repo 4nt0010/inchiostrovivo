@@ -16,7 +16,7 @@ interface Props {
   aggiornato?: Date;
   noindex?: boolean;
   jsonld?: object | object[];
-  sfondo?: string; // immagine sfocata dietro al foglio
+  sfondo?: string; // non più usato: niente sfondo sfocato
   lettura?: boolean; // barra di avanzamento della lettura
 }
 const { sfondo = "/sfondo-sfocato.webp", lettura = false } = Astro.props;
@@ -25,7 +25,6 @@ const voci = [
   { href: "/", nome: "Home" },
   { href: "/articoli/", nome: "Articoli" },
   { href: "/chi-siamo/", nome: "Chi siamo" },
-  { href: "/contatti/", nome: "Contatti" },
 ];
 const attiva = (href: string) =>
   href === "/" ? percorso === "/" : percorso.startsWith(href) || (href === "/articoli/" && percorso.startsWith("/rubriche/"));
@@ -46,29 +45,32 @@ const iconaCerca = `<svg aria-hidden="true" viewBox="0 0 24 24" width="16" heigh
     <Seo {...Astro.props} />
   </head>
   <body class:list={[{ "pagina-home": percorso === "/" }]}>
-    <div class="fondale" aria-hidden="true" style={`--fondale: url("${sfondo}")`}></div>
     {lettura && <div class="lettura" aria-hidden="true"><span></span></div>}
     <a class="salta" href="#contenuto">Vai al contenuto</a>
 
-    <div class="foglio">
+    <div class="pagina-intera">
       <header class="testata">
-        <nav class="pillole" aria-label="Menu principale">
-          <a class="pillola pillola-logo" href="/" aria-label={`${SITO.nome}, home`}>
+        <div class="testata-interno">
+        {percorso !== "/" ? (
+          <a class="marchio" href="/" aria-label={`${SITO.nome}, home`}>
             <img src="/logo.webp" alt={SITO.nome} width="550" height="196" />
           </a>
-          <ul class="pillole-voci">
-            {voci.map((v) => <li><a class="pillola" href={v.href} aria-current={attiva(v.href) ? "page" : undefined}>{v.nome}</a></li>)}
+        ) : <span />}
+        <nav class="menu" aria-label="Menu principale">
+          <ul class="menu-voci">
+            {voci.map((v) => <li><a href={v.href} aria-current={attiva(v.href) ? "page" : undefined}>{v.nome}</a></li>)}
           </ul>
-          <a class="pillola pillola-cerca" href="/cerca/" aria-label="Cerca" data-apri-ricerca aria-current={attiva("/cerca/") ? "page" : undefined}>
+          <a class="menu-cerca" href="/cerca/" aria-label="Cerca" data-apri-ricerca aria-current={attiva("/cerca/") ? "page" : undefined}>
             <Fragment set:html={iconaCerca} /><span>Cerca</span><kbd>/</kbd>
           </a>
-          <details class="pillole-menu">
-            <summary class="pillola">Menu</summary>
+          <details class="menu-mobile">
+            <summary>Menu</summary>
             <ul>
               {voci.map((v) => <li><a href={v.href} aria-current={attiva(v.href) ? "page" : undefined}>{v.nome}</a></li>)}
             </ul>
           </details>
         </nav>
+        </div>
       </header>
 
       <main id="contenuto">
@@ -81,8 +83,9 @@ const iconaCerca = `<svg aria-hidden="true" viewBox="0 0 24 24" width="16" heigh
           <ul>
             <li><a href="/articoli/">Articoli</a></li>
             <li><a href="/rubriche/">Rubriche</a></li>
+            <li><a href="/contatti/">Contatti</a></li>
             <li><a href="/autori/">Autori</a></li>
-            <li><a href="/rss.xml">RSS</a></li>
+            <li><a href="/feed/">RSS</a></li>
           </ul>
           <p>© {anno} {SITO.nome}, {SITO.scuola} di {SITO.citta}</p>
         </div>
@@ -108,7 +111,14 @@ const iconaCerca = `<svg aria-hidden="true" viewBox="0 0 24 24" width="16" heigh
     )}
     <script>
       // Chiude il menu mobile quando si sceglie una voce o si tocca fuori
-      const menu = document.querySelector<HTMLDetailsElement>(".pillole-menu");
+      const menu = document.querySelector<HTMLDetailsElement>(".menu-mobile");
+      // In home la testata è trasparente sulla foto e diventa bianca quando si scorre
+      const testata = document.querySelector<HTMLElement>(".pagina-home .testata");
+      if (testata) {
+        const aggiorna = () => testata.classList.toggle("scorsa", scrollY > 40);
+        addEventListener("scroll", aggiorna, { passive: true });
+        aggiorna();
+      }
       document.addEventListener("click", (e) => {
         if (menu?.open && !menu.contains(e.target as Node)) menu.open = false;
       });

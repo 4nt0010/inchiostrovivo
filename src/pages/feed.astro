@@ -1,0 +1,49 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITO } from "../../sito.config.mjs";
+import { articoli, data, elencoNomi } from "../lib/contenuti";
+
+const indirizzo = `${SITO.url}/rss.xml`;
+const ultimi = (await articoli()).slice(0, 5);
+---
+<Base titolo="Feed RSS" descrizione={`Segui ${SITO.nome} con il feed RSS: i nuovi articoli arrivano da soli nella tua app di notizie.`}>
+  <div class="contenitore">
+    <header class="pagina">
+      <h1 class="tratto tratto-sx">Feed RSS</h1>
+      <p>Aggiungi questo indirizzo alla tua app di notizie (Feedly, Inoreader, Notizie, NetNewsWire…) e i nuovi articoli di {SITO.nome} ti arriveranno da soli.</p>
+    </header>
+    <div class="feed-indirizzo">
+      <code id="indirizzo-feed">{indirizzo}</code>
+      <button class="pulsante" type="button" data-copia={indirizzo}>Copia l'indirizzo</button>
+    </div>
+    <h2 class="feed-titolo">Gli ultimi articoli nel feed</h2>
+    <ul class="feed-elenco">
+      {ultimi.map((a) => (
+        <li>
+          <a href={`/articoli/${a.id}/`}>{a.data.title}</a>
+          <span>{elencoNomi(a.data.autori)}, {data(a.data.date)}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+<style>
+  .feed-indirizzo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; background: #fff; border: 1px solid var(--bordo); border-radius: var(--raggio); padding: 1rem 1.1rem; max-width: var(--colonna); }
+  .feed-indirizzo code { flex: 1; min-width: 14rem; font-size: 0.95rem; color: var(--blu-notte); overflow-wrap: anywhere; }
+  .feed-titolo { font-size: 1.6rem; margin: 2.75rem 0 1rem; }
+  .feed-elenco { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; max-width: var(--colonna); }
+  .feed-elenco li { display: grid; gap: 0.15rem; padding: 0.85rem 1.1rem; background: #fff; border: 1px solid var(--bordo); border-radius: var(--raggio); }
+  .feed-elenco a { font-family: var(--titoli); font-size: 1.25rem; color: var(--inchiostro); text-decoration: none; }
+  .feed-elenco a:hover { color: var(--blu-notte); text-decoration: underline; }
+  .feed-elenco span { font-size: 0.88rem; color: var(--tenue); }
+</style>
+<script>
+  document.querySelectorAll<HTMLButtonElement>("[data-copia]").forEach((b) => {
+    b.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(b.dataset.copia || "");
+        b.textContent = "Indirizzo copiato";
+      } catch {}
+    });
+  });
+</script>

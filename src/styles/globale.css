@@ -61,10 +61,10 @@ h1, h2, h3 { font-family: var(--titoli); font-weight: 500; color: var(--inchiost
 
 /* ───────── Home: copertina ───────── */
 .copertina {
-  position: relative; min-height: min(78vh, 42rem); margin: 0 clamp(0.5rem, 2vw, 1.25rem);
-  display: grid; place-items: center; padding: 4rem 1.25rem;
+  position: relative; min-height: min(100svh, 52rem);
+  display: grid; place-items: center; padding: 6rem 1.25rem 4rem;
   background: #3a3530 url("/sfondo-home.webp") center / cover no-repeat;
-  border-radius: calc(var(--raggio) + 6px); overflow: hidden;
+  overflow: hidden;
   isolation: isolate;
 }
 .copertina::before { content: ""; position: absolute; inset: 0; z-index: -1; backdrop-filter: blur(3px); background: rgb(20 24 40 / 0.18); }
@@ -115,7 +115,7 @@ h1, h2, h3 { font-family: var(--titoli); font-weight: 500; color: var(--inchiost
 .firma-nome a:hover { text-decoration: underline; }
 
 /* Cosa fa Inchiostro Vivo */
-.missione { background: var(--velo); position: relative; overflow: hidden; margin: 0 clamp(0.5rem, 2vw, 1.25rem); border-radius: calc(var(--raggio) + 6px); }
+.missione { background: var(--velo); position: relative; overflow: hidden; }
 .missione::before {
   content: ""; position: absolute; inset: auto -10% -45% 35%; height: 90%;
   background: var(--sfumatura); opacity: 0.12; transform: rotate(-12deg); border-radius: 40% 60% 0 0;
@@ -134,7 +134,7 @@ h1, h2, h3 { font-family: var(--titoli); font-weight: 500; color: var(--inchiost
 .passo p { margin: 0; }
 
 /* Contatti: pannello scuro + modulo, come su Wix */
-.contatti { display: grid; margin: 4.5rem clamp(0.5rem, 2vw, 1.25rem) 0; border-radius: calc(var(--raggio) + 6px); overflow: hidden; background: #fff; }
+.contatti { display: grid; margin: 0; overflow: hidden; background: #fff; }
 .contatti-pannello { background: var(--inchiostro); color: #e9ecf3; padding: 3rem 2rem; position: relative; overflow: hidden; }
 .contatti-pannello::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--sfumatura); }
 .contatti-pannello h2 { color: #fff; font-size: 2.4rem; margin-bottom: 1.5rem; }
@@ -214,49 +214,43 @@ h1, h2, h3 { font-family: var(--titoli); font-weight: 500; color: var(--inchiost
 .pagina p { color: var(--tenue); max-width: var(--colonna); margin: 0 0 2rem; }
 .pagina h1 + p { margin-top: -0.25rem; }
 
-/* ───────── Foglio "journal" sopra la foto sfocata ───────── */
-.fondale { position: fixed; inset: -40px; z-index: -1; background: #c9d1dc var(--fondale) center / cover no-repeat; filter: blur(28px) saturate(1.05); transform: scale(1.08); }
-.fondale::after { content: ""; position: absolute; inset: 0; background: rgb(222 228 238 / 0.35); }
-.foglio {
-  max-width: 82rem; margin: clamp(0.5rem, 2vw, 1.5rem) auto; background: var(--foglio);
-  border-radius: clamp(20px, 2.4vw, 32px); box-shadow: 0 40px 90px -40px rgb(15 25 55 / 0.45), 0 0 0 1px rgb(255 255 255 / 0.6) inset;
-  overflow: clip; min-height: calc(100vh - 3rem);
-}
-@media (max-width: 40rem) { .foglio { margin: 0.4rem; } }
-
-/* ───────── Menu a pillole ───────── */
-.testata { position: sticky; top: 0; z-index: 10; display: flex; justify-content: center; padding: 1rem 0.75rem 1.1rem; }
-.pillole { display: flex; align-items: center; gap: 0.35rem; padding: 0.3rem; border-radius: 999px; background: rgb(245 246 248 / 0.72); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); box-shadow: 0 8px 30px -14px rgb(15 25 55 / 0.35); }
-.pillole ul { list-style: none; margin: 0; padding: 0; }
-.pillole-voci { display: none; gap: 0.35rem; }
-.pillola {
-  display: inline-flex; align-items: center; gap: 0.4rem; height: 2.3rem; padding: 0 1rem; border-radius: 999px;
-  background: var(--pillola); color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500; white-space: nowrap; cursor: pointer;
-  transition: background 0.3s var(--morbido), transform 0.3s var(--morbido);
-}
-.pillola:hover { background: rgb(70 80 98 / 0.85); color: #fff; }
-.pillola:active { transform: scale(0.97); }
-.pillola[aria-current="page"] { background: var(--blu-notte); }
-.pillola-logo { background: #fff; padding: 0 0.9rem; }
-.pillola-logo:hover { background: #fff; }
-.pillola-logo img { height: 1.55rem; width: auto; }
-.pillola-cerca kbd { font: inherit; font-size: 0.75rem; line-height: 1; padding: 0.2rem 0.4rem; border-radius: 6px; background: rgb(255 255 255 / 0.2); display: none; }
-.pillole-menu { position: relative; }
-.pillole-menu summary { list-style: none; }
-.pillole-menu summary::-webkit-details-marker { display: none; }
-.pillole-menu ul {
-  position: absolute; right: 0; top: calc(100% + 0.6rem); min-width: 12rem; padding: 0.4rem;
-  background: rgb(255 255 255 / 0.96); backdrop-filter: blur(12px); border-radius: 18px; box-shadow: 0 24px 50px -20px rgb(15 25 55 / 0.45);
-  transform-origin: top right; animation: compari 0.35s var(--morbido);
-}
-.pillole-menu li a { display: block; padding: 0.65rem 0.9rem; border-radius: 12px; color: var(--inchiostro); text-decoration: none; }
-.pillole-menu li a:hover, .pillole-menu li a[aria-current="page"] { background: var(--velo); color: var(--blu-notte); }
-@media (max-width: 26rem) { .pillola-cerca span { display: none; } }
+/* ───────── Testata: semplice, a tutta larghezza ───────── */
+body { background: #fff; }
+.testata { position: sticky; top: 0; z-index: 10; background: rgb(255 255 255 / 0.92); backdrop-filter: blur(10px) saturate(1.3); -webkit-backdrop-filter: blur(10px) saturate(1.3); border-bottom: 1px solid var(--bordo); transition: background 0.3s, border-color 0.3s; }
+.testata-interno { max-width: var(--larghezza); margin: 0 auto; padding: 0.7rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 4rem; }
+.marchio img { height: 2.5rem; width: auto; }
+.menu { display: flex; align-items: center; gap: 1.75rem; }
+.menu ul { list-style: none; margin: 0; padding: 0; }
+.menu-voci { display: none; gap: 1.75rem; }
+.menu a { color: var(--inchiostro); text-decoration: none; font-weight: 500; font-size: 0.98rem; position: relative; padding: 0.3rem 0; }
+.menu-voci a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; border-radius: 2px; background: var(--sfumatura); transform: scaleX(0); transform-origin: left; transition: transform 0.35s var(--morbido); }
+.menu-voci a:hover::after, .menu-voci a[aria-current="page"]::after { transform: scaleX(1); }
+.menu-voci a[aria-current="page"] { color: var(--blu-notte); }
+.menu-cerca { display: inline-flex; align-items: center; gap: 0.45rem; }
+.menu-cerca:hover { color: var(--blu); }
+.menu-cerca kbd { font: inherit; font-size: 0.72rem; line-height: 1; padding: 0.22rem 0.42rem; border-radius: 6px; border: 1px solid var(--bordo); color: var(--tenue); display: none; }
+.menu-mobile { position: relative; }
+.menu-mobile summary { list-style: none; cursor: pointer; font-weight: 600; padding: 0.4rem 0.95rem; border: 1px solid var(--bordo); border-radius: 999px; }
+.menu-mobile summary::-webkit-details-marker { display: none; }
+.menu-mobile ul { position: absolute; right: 0; top: calc(100% + 0.6rem); min-width: 12rem; padding: 0.4rem; background: #fff; border-radius: 16px; box-shadow: 0 24px 50px -20px rgb(15 25 55 / 0.45); border: 1px solid var(--bordo); transform-origin: top right; animation: compari 0.35s var(--morbido); }
+.menu-mobile li a { display: block; padding: 0.65rem 0.9rem; border-radius: 10px; }
+.menu-mobile li a:hover, .menu-mobile li a[aria-current="page"] { background: var(--velo); color: var(--blu-notte); }
 @media (min-width: 52rem) {
-  .pillole-voci { display: flex; }
-  .pillole-menu { display: none; }
-  .pillola-cerca kbd { display: inline-block; }
+  .menu-voci { display: flex; }
+  .menu-mobile { display: none; }
+  .menu-cerca kbd { display: inline-block; }
 }
+
+/* Home: la testata galleggia sulla foto, senza logo (c'è già quello grande) */
+.pagina-home .testata { position: fixed; left: 0; right: 0; background: transparent; border-color: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; }
+.pagina-home .testata a, .pagina-home .menu-mobile summary { color: #fff; }
+.pagina-home .menu-mobile summary { border-color: rgb(255 255 255 / 0.6); }
+.pagina-home .menu-mobile li a { color: var(--inchiostro); }
+.pagina-home .menu-cerca kbd { color: rgb(255 255 255 / 0.85); border-color: rgb(255 255 255 / 0.5); }
+.pagina-home .testata.scorsa { background: rgb(255 255 255 / 0.92); border-color: var(--bordo); backdrop-filter: blur(10px) saturate(1.3); -webkit-backdrop-filter: blur(10px) saturate(1.3); }
+.pagina-home .testata.scorsa a, .pagina-home .testata.scorsa .menu-mobile summary { color: var(--inchiostro); }
+.pagina-home .testata.scorsa .menu-mobile summary { border-color: var(--bordo); }
+.pagina-home .testata.scorsa .menu-cerca kbd { color: var(--tenue); border-color: var(--bordo); }
 
 /* ───────── Articolo: testata in stile journal ───────── */
 .art-testa { max-width: 64rem; margin: 0 auto; padding: 2rem 1.5rem 0; display: grid; gap: 1.5rem; }
@@ -307,7 +301,7 @@ h1, h2, h3 { font-family: var(--titoli); font-weight: 500; color: var(--inchiost
 .articolo-rubriche a:hover { border-color: var(--blu); }
 .condividi { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 1.5rem; padding: 1rem 0; border-top: 1px solid var(--bordo); border-bottom: 1px solid var(--bordo); }
 .condividi span { font-size: 0.9rem; color: var(--tenue); margin-right: 0.4rem; }
-.condividi a, .condividi button { display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 0; background: var(--pillola); color: #fff; cursor: pointer; transition: background 0.3s var(--morbido), transform 0.3s var(--morbido); }
+.condividi a, .condividi button { display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid var(--bordo); background: #fff; color: var(--inchiostro); cursor: pointer; transition: background 0.3s var(--morbido), transform 0.3s var(--morbido); }
 .condividi a:hover, .condividi button:hover { background: var(--blu-notte); color: #fff; transform: translateY(-2px); }
 
 /* Barra di lettura */
@@ -342,6 +336,8 @@ h1, h2, h3 { font-family: var(--titoli); font-weight: 500; color: var(--inchiost
 
 /* ───────── Piede ───────── */
 .piede { margin-top: 5rem; }
+.pagina-home .piede { margin-top: 0; }
+.pagina-home .piede-interno { border-top: 0; }
 .piede-interno { max-width: var(--larghezza); margin: 0 auto; padding: 2rem 1.5rem 2.25rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; font-size: 0.9rem; color: var(--tenue); border-top: 1px solid var(--bordo); }
 .piede-interno img { height: 2.1rem; width: auto; }
 .piede ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; }
@@ -416,6 +412,6 @@ html { scroll-behavior: smooth; }
 
 /* Contatti senza modulo: il pannello occupa tutta la larghezza */
 .contatti { display: block; }
-.contatti-pannello { display: grid; gap: 1rem 3rem; align-items: center; padding: 3rem 2rem; }
+.contatti-pannello { display: grid; gap: 1rem 3rem; align-items: center; padding: 3.5rem max(1.5rem, calc((100vw - var(--larghezza)) / 2 + 1.5rem)); }
 .contatti-pannello h1, .contatti-pannello h2 { margin-bottom: 0; }
-@media (min-width: 52rem) { .contatti-pannello { grid-template-columns: auto 1fr; padding: 3.5rem 4rem; } }
+@media (min-width: 52rem) { .contatti-pannello { grid-template-columns: auto 1fr; } }
