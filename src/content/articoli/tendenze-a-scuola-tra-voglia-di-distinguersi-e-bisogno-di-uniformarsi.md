@@ -5,13 +5,13 @@ autori:
   - "Giorgia Gentile"
 rubriche:
   - dimmi-come-ti-vesti
-copertina: "https://static.wixstatic.com/media/0a0d0f_7f01cfa95e3240fda1826b25453b3ba7~mv2.png"
+copertina: "/media/wix/0a0d0f_7f01cfa95e3240fda1826b25453b3ba7.png"
 alt_copertina: ""
 ---
 
 La bellezza è l’ineludibile meta di una ricerca che accompagna, da sempre, l’umanità. Con l’avvento della globalizzazione, però, il concetto di bellezza non è più rimasto confinato nello spazio di tradizioni, abitudini e culture locali, ma si è trasformato in un ideale condiviso su scala globale. Proprio in questo contesto, la moda, da sempre un mezzo per esprimere se stessi, per distinguersi o per sentirsi parte di un contesto sociale, ha cambiato il suo significato, diventando un modello estetico e comportamentale capace di superare confini e generazioni e arrivando, così,  ad influenzare anche la realtà scolastica.
 
-![](https://static.wixstatic.com/media/0a0d0f_7f01cfa95e3240fda1826b25453b3ba7~mv2.png)
+![](/media/wix/0a0d0f_7f01cfa95e3240fda1826b25453b3ba7.png)
 
 Le differenze tra gli studenti sono già evidenti nelle classi: ciascuno si definisce attraverso gusti, interessi e stili diversi. È, tuttavia, impossibile non notare la presenza di grandi gruppi che seguono poche mode principali.  Anche la scuola è quindi segnata dalla coesistenza della diversità individuale e dall’omologazione di massa, diventando un perfetto microcosmo per osservare come e perché si diffondono le mode.
 

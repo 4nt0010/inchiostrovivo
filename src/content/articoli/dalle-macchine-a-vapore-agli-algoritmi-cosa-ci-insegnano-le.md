@@ -5,7 +5,7 @@ autori:
   - "Onofrio Vinciguerra"
 rubriche:
   - la-grande-storia
-copertina: "https://static.wixstatic.com/media/0a0d0f_4d86b4a1e3854559ab870c13dccf4e13~mv2.png"
+copertina: "/media/wix/0a0d0f_4d86b4a1e3854559ab870c13dccf4e13.png"
 alt_copertina: ""
 ---
 
@@ -23,4 +23,4 @@ C’è poi un aspetto umano che accomuna il presente al passato: la paura. Nell�
 
 La vera questione, però, non è tecnologica. È sociale e politica. La tecnologia non è neutra, ma non è nemmeno un destino inevitabile. Dipende da come viene usata, regolata e distribuita. La rivoluzione industriale di oggi ci obbliga a ripensare il concetto di lavoro, di competenze e di responsabilità collettiva, proprio come fecero le società del passato quando nacquero le fabbriche, i sindacati e i diritti dei lavoratori.Guardare alle rivoluzioni industriali precedenti ci insegna una cosa fondamentale: il progresso non è mai solo tecnico. È sempre una scelta su che tipo di società vogliamo costruire. Oggi, come allora, la domanda non è se il cambiamento arriverà, ma chi ne trarrà beneficio e a quale prezzo.
 
-![](https://static.wixstatic.com/media/0a0d0f_4d86b4a1e3854559ab870c13dccf4e13~mv2.png)
+![](/media/wix/0a0d0f_4d86b4a1e3854559ab870c13dccf4e13.png)

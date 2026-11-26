@@ -5,7 +5,7 @@ autori:
   - "Alba Cannone"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_5ff404b44f9443069118bd3be75daeef~mv2.png"
+copertina: "/media/wix/0a0d0f_5ff404b44f9443069118bd3be75daeef.png"
 alt_copertina: ""
 ---
 
@@ -51,4 +51,4 @@ Ogni volta che un’idea viene oppressa, solo perchè diversa, ci sentiamo un p�
 
 **Il passato è passato, ma il presente può essere ripensato!**
 
-![](https://static.wixstatic.com/media/0a0d0f_5ff404b44f9443069118bd3be75daeef~mv2.png)
+![](/media/wix/0a0d0f_5ff404b44f9443069118bd3be75daeef.png)

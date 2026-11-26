@@ -6,7 +6,7 @@ autori:
 rubriche:
   - cittadinanza-attiva
   - musica
-copertina: "https://static.wixstatic.com/media/0a0d0f_e9664f936dc8435880ac8b581f597be1~mv2.jpg"
+copertina: "/media/wix/0a0d0f_e9664f936dc8435880ac8b581f597be1.jpg"
 alt_copertina: ""
 ---
 
@@ -16,8 +16,8 @@ A far parlare sui social è stata, però, la censura attuata nei confronti del r
 
 Mi viene da pensare: noi ragazzi stiamo davvero crescendo in un paese in cui vige la libertà di espressione? Cosa ci riserva il futuro, se un semplice “stop al genocidio” pronunciato nel 2024 sul palco di Sanremo ha comportato una sorta di demolizione della visibilità di un artista?
 
-![](https://static.wixstatic.com/media/0a0d0f_e9664f936dc8435880ac8b581f597be1~mv2.jpg)
+![](/media/wix/0a0d0f_e9664f936dc8435880ac8b581f597be1.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_65ef266083c0466bbb6083667c21b050~mv2.jpg)
+![](/media/wix/0a0d0f_65ef266083c0466bbb6083667c21b050.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_9dd8bc5ac6a64ed1b66ba927142797c4~mv2.jpg)
+![](/media/wix/0a0d0f_9dd8bc5ac6a64ed1b66ba927142797c4.jpg)

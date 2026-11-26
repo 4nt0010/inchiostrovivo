@@ -6,7 +6,7 @@ autori:
   - "Gaia Gentile"
 rubriche:
   - musica
-copertina: "https://static.wixstatic.com/media/0a0d0f_e254f844976a4b56a6b00a4ea8d352d8~mv2.png"
+copertina: "/media/wix/0a0d0f_e254f844976a4b56a6b00a4ea8d352d8.png"
 alt_copertina: ""
 ---
 
@@ -14,7 +14,7 @@ A partire dagli anni ‘90, la Puglia è diventata teatro di molteplici eventi m
 
 La musica popolare pugliese affonda le sue radici nella penisola salentina, dove il *tarantismo*, un antichissimo rito terapeutico contro il morso simbolico della taranta, diede origine a una danza liberatoria accompagnata dal ritmo incalzante di tamburelli, nacchere e chitarre: la *pizzica*.
 
-![](https://static.wixstatic.com/media/0a0d0f_e254f844976a4b56a6b00a4ea8d352d8~mv2.png)
+![](/media/wix/0a0d0f_e254f844976a4b56a6b00a4ea8d352d8.png)
 
 *Notte della Taranta 2025*
 
@@ -30,7 +30,7 @@ Il Festival della Valle d’Itria si tiene ogni estate dal 1975 nel palazzo Duca
 
 Il Locus Festival si svolge dal 2005 tra centri storici e masserie di Alberobello, Locorotondo,
 
-![](https://static.wixstatic.com/media/0a0d0f_d617c6723e244b3cbd7ce8a36d5d9027~mv2.jpg)
+![](/media/wix/0a0d0f_d617c6723e244b3cbd7ce8a36d5d9027.jpg)
 
 *Locus Festival 2025*
 

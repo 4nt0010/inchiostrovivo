@@ -5,7 +5,7 @@ autori:
   - "Noemi Pero"
 rubriche:
   - arte
-copertina: "https://static.wixstatic.com/media/0a0d0f_1d3b068f0568477485fd62b33076bbc0~mv2.png"
+copertina: "/media/wix/0a0d0f_1d3b068f0568477485fd62b33076bbc0.png"
 alt_copertina: ""
 ---
 

@@ -5,7 +5,7 @@ autori:
   - "Filippo Sforza"
 rubriche:
   - cittadinanza-attiva
-copertina: "https://static.wixstatic.com/media/0a0d0f_16d86fea48ee439981e61086cdbf13a4~mv2.jpg"
+copertina: "/media/wix/0a0d0f_16d86fea48ee439981e61086cdbf13a4.jpg"
 alt_copertina: ""
 ---
 

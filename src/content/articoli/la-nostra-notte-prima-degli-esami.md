@@ -5,7 +5,7 @@ autori:
   - "Filippo Sforza"
 rubriche:
   - la-nostra-scuola
-copertina: "https://static.wixstatic.com/media/0a0d0f_c8d1b6d2e80944a19441123204428aa1~mv2.png"
+copertina: "/media/wix/0a0d0f_c8d1b6d2e80944a19441123204428aa1.png"
 alt_copertina: ""
 ---
 

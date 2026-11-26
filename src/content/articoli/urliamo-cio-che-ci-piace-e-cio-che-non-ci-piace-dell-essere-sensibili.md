@@ -6,7 +6,7 @@ autori:
   - "Sabrina Cofano"
 rubriche:
   - urliamo-cio-che-ci-piace
-copertina: "https://static.wixstatic.com/media/0a0d0f_5e0c447d73f6483baf9523a3ab4ec649~mv2.jpg"
+copertina: "/media/wix/0a0d0f_5e0c447d73f6483baf9523a3ab4ec649.jpg"
 alt_copertina: ""
 ---
 

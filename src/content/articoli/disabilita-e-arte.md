@@ -7,7 +7,7 @@ autori:
 rubriche:
   - arte
   - cittadinanza-attiva
-copertina: "https://static.wixstatic.com/media/0a0d0f_4f5fd95d86ae48c198c99fa1496dd507~mv2.jpg"
+copertina: "/media/wix/0a0d0f_4f5fd95d86ae48c198c99fa1496dd507.jpg"
 alt_copertina: ""
 ---
 

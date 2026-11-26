@@ -4,7 +4,7 @@ date: 2025-11-26T15:46:39.395Z
 autori:
   - "Teresa Cecere"
 rubriche: []
-copertina: "https://static.wixstatic.com/media/95ee78_30ee089afb13455bb129c2afade231fa~mv2.jpg"
+copertina: "/media/wix/95ee78_30ee089afb13455bb129c2afade231fa.jpg"
 alt_copertina: ""
 in_evidenza: true
 ---
@@ -35,4 +35,4 @@ Prof.ssa Teresa Cecere
 
 Responsabile di Progetto
 
-![](https://static.wixstatic.com/media/95ee78_30ee089afb13455bb129c2afade231fa~mv2.jpg)
+![](/media/wix/95ee78_30ee089afb13455bb129c2afade231fa.jpg)

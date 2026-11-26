@@ -5,7 +5,7 @@ autori:
   - "Noemi Pero"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_77528275ed1f46daa75bd3cfc8e964a7~mv2.jpg"
+copertina: "/media/wix/0a0d0f_77528275ed1f46daa75bd3cfc8e964a7.jpg"
 alt_copertina: ""
 ---
 

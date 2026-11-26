@@ -7,7 +7,7 @@ autori:
 rubriche:
   - cittadinanza-attiva
   - la-grande-storia
-copertina: "https://static.wixstatic.com/media/0a0d0f_b121323515a84df3957c42812fa72394~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_b121323515a84df3957c42812fa72394.jpg"
 alt_copertina: ""
 ---
 
@@ -25,56 +25,56 @@ Questo è un viaggio che cambia. Non perché ci “insegna” qualcosa di nuovo 
 
 Che cosa avremmo fatto noi? Come reagiamo oggi di fronte alle discriminazioni, all’odio, alle ingiustizie? Quanto siamo disposte a difendere i diritti degli altri, anche quando non ci riguardano direttamente? Tornare significa assumersi una responsabilità: quella di raccontare, di testimoniare, di non lasciare che tutto questo venga ridotto a una ricorrenza o a una pagina di libro. La memoria è viva solo se viene condivisa. Ed è per questo che scriviamo. Perché ricordare non è solo guardare al passato, ma scegliere, ogni giorno, da che parte stare.
 
-![](https://static.wixstatic.com/media/0a0d0f_e9ba805d12444b32aa362fa3f8689875~mv2.jpeg)
+![](/media/wix/0a0d0f_e9ba805d12444b32aa362fa3f8689875.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_5fc38c22d5fc4cdb8a2409cfe9cccf07~mv2.jpeg)
+![](/media/wix/0a0d0f_5fc38c22d5fc4cdb8a2409cfe9cccf07.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_09a367245e774d04876b060cc4581489~mv2.jpeg)
+![](/media/wix/0a0d0f_09a367245e774d04876b060cc4581489.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_e4072632b19c4d5592c35500aaec1fe4~mv2.jpeg)
+![](/media/wix/0a0d0f_e4072632b19c4d5592c35500aaec1fe4.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_9adc8bc3891041c596d1bc3992ba423b~mv2.jpeg)
+![](/media/wix/0a0d0f_9adc8bc3891041c596d1bc3992ba423b.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_747c05bed3574dd5aa6e3413961a029b~mv2.jpeg)
+![](/media/wix/0a0d0f_747c05bed3574dd5aa6e3413961a029b.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_dcc33c10083a46bb82bbd9bd3c1c6463~mv2.jpeg)
+![](/media/wix/0a0d0f_dcc33c10083a46bb82bbd9bd3c1c6463.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_5e50d8d1eafe41c38b02e30d95ae26f4~mv2.jpeg)
+![](/media/wix/0a0d0f_5e50d8d1eafe41c38b02e30d95ae26f4.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_a7325aa8875645c7885fb30ab3a668e0~mv2.jpeg)
+![](/media/wix/0a0d0f_a7325aa8875645c7885fb30ab3a668e0.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_be51aa640c1d407bbac321932acfc3c2~mv2.jpeg)
+![](/media/wix/0a0d0f_be51aa640c1d407bbac321932acfc3c2.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_045b21f1459443b7b00e86cf89b6164c~mv2.jpeg)
+![](/media/wix/0a0d0f_045b21f1459443b7b00e86cf89b6164c.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_92d2b35f77454876bdb8946dc9aa52dd~mv2.jpeg)
+![](/media/wix/0a0d0f_92d2b35f77454876bdb8946dc9aa52dd.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_1a67ec76ccd5401497d318ad5c4177aa~mv2.jpeg)
+![](/media/wix/0a0d0f_1a67ec76ccd5401497d318ad5c4177aa.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_3d7fb50ef4224d87a44b739932e3360b~mv2.jpeg)
+![](/media/wix/0a0d0f_3d7fb50ef4224d87a44b739932e3360b.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_170f80f68a824049924d52dfe17c8408~mv2.jpeg)
+![](/media/wix/0a0d0f_170f80f68a824049924d52dfe17c8408.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_e6f02c30d25b41eca77309d7c00dbb22~mv2.jpeg)
+![](/media/wix/0a0d0f_e6f02c30d25b41eca77309d7c00dbb22.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_da0d5a44626d43e4972ba716337411cb~mv2.jpeg)
+![](/media/wix/0a0d0f_da0d5a44626d43e4972ba716337411cb.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_64b48b5c177e4746affe917178a16a86~mv2.jpeg)
+![](/media/wix/0a0d0f_64b48b5c177e4746affe917178a16a86.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_e24b2ce0b3c64035af0acf5b625e43ae~mv2.jpeg)
+![](/media/wix/0a0d0f_e24b2ce0b3c64035af0acf5b625e43ae.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_ff6de75e9e5640e4a1d694fde362e028~mv2.jpeg)
+![](/media/wix/0a0d0f_ff6de75e9e5640e4a1d694fde362e028.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_dcbb0552abf941129541f515ec1efe52~mv2.jpeg)
+![](/media/wix/0a0d0f_dcbb0552abf941129541f515ec1efe52.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_f79b4994ea794931b9c0d4ba107acc41~mv2.jpeg)
+![](/media/wix/0a0d0f_f79b4994ea794931b9c0d4ba107acc41.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_9df9275c3f5e41ca9e68d5bb20166243~mv2.jpeg)
+![](/media/wix/0a0d0f_9df9275c3f5e41ca9e68d5bb20166243.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_28eb6578a4ee4a5ca43693f5872404b3~mv2.jpeg)
+![](/media/wix/0a0d0f_28eb6578a4ee4a5ca43693f5872404b3.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_985788cadbf14430b360d8cdbdb3bd4d~mv2.jpeg)
+![](/media/wix/0a0d0f_985788cadbf14430b360d8cdbdb3bd4d.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_14b15885f1ca45d9b0b1e0e827699b79~mv2.jpeg)
+![](/media/wix/0a0d0f_14b15885f1ca45d9b0b1e0e827699b79.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_961ae4eb62624556a7b2c0f54850ad3f~mv2.jpeg)
+![](/media/wix/0a0d0f_961ae4eb62624556a7b2c0f54850ad3f.jpg)

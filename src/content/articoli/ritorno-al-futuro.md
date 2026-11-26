@@ -6,7 +6,7 @@ autori:
   - "Vita Ventrella"
 rubriche:
   - la-nostra-scuola
-copertina: "https://static.wixstatic.com/media/95ee78_f74828a07cc94abf879ea0f4d70c3479~mv2.jpeg"
+copertina: "/media/wix/95ee78_f74828a07cc94abf879ea0f4d70c3479.jpg"
 alt_copertina: ""
 descrizione: "Come in una macchina del tempo, si torna al Liceo di trent’anni fa: banchi tradizionali, lavagne d’ardesia, corridoi pieni di sogni e voci che risuonano nella memoria. Oggi, invece, troviamo aule STEM, ambienti immersivi, robot, droni e nuove tecnologie che hanno trasformato la scuola. Non è un “meglio o peggio”: ogni tempo è il presente di chi lo vive. Guardare avanti, senza paura del cambiamento, è il modo migliore per accompagnare i giovani verso il loro futuro."
 ---

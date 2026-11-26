@@ -6,7 +6,7 @@ autori:
   - "Antonio Laguardia"
 rubriche:
   - ospiti-speciali
-copertina: "https://static.wixstatic.com/media/95ee78_8ad24c6f137e422da98b9c46fbc773d5~mv2.png"
+copertina: "/media/wix/95ee78_8ad24c6f137e422da98b9c46fbc773d5.png"
 alt_copertina: ""
 ---
 
@@ -42,12 +42,12 @@ Michele ha scelto la seconda opzione. E nella sua scelta, apparentemente semplic
 
 Forse è proprio questo ciò che dovrebbe restare tra dieci anni, come lui stesso auspica quando riflette sul suo lascito. Non un brand, non un personaggio costruito, non un impero commerciale. Ma l'esempio di una persona che ha saputo abitare il proprio tempo senza farsi abitare da esso. Che ha usato gli strumenti del presente senza dimenticare i valori del passato. Che ha parlato a milioni di persone restando, fondamentalmente, un agricoltore di Bitonto.
 
-![](https://static.wixstatic.com/media/95ee78_d5205dcc0253452f90cc06fb97ad59ec~mv2.jpg)
+![](/media/wix/95ee78_d5205dcc0253452f90cc06fb97ad59ec.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_b4899cb3d3dd43fea7875b4943989f1f~mv2.jpg)
+![](/media/wix/95ee78_b4899cb3d3dd43fea7875b4943989f1f.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_471cb632532540c0ad7f2f659e6fe079~mv2.jpg)
+![](/media/wix/95ee78_471cb632532540c0ad7f2f659e6fe079.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_8ad24c6f137e422da98b9c46fbc773d5~mv2.png)
+![](/media/wix/95ee78_8ad24c6f137e422da98b9c46fbc773d5.png)
 
-![](https://static.wixstatic.com/media/95ee78_d558bc5f140347bf961b8db132040b92~mv2.jpg)
+![](/media/wix/95ee78_d558bc5f140347bf961b8db132040b92.jpg)

@@ -5,7 +5,7 @@ autori:
   - "Matteo Bagorda"
 rubriche:
   - storia-locale
-copertina: "https://static.wixstatic.com/media/0a0d0f_b36092e67f794842b553f26ce0da49c7~mv2.png"
+copertina: "/media/wix/0a0d0f_b36092e67f794842b553f26ce0da49c7.png"
 alt_copertina: ""
 ---
 

@@ -5,7 +5,7 @@ autori:
   - "Sofia Russo"
 rubriche:
   - satira
-copertina: "https://static.wixstatic.com/media/0a0d0f_62dc7ca326bf46649931f7c731cd27b5~mv2.png"
+copertina: "/media/wix/0a0d0f_62dc7ca326bf46649931f7c731cd27b5.png"
 alt_copertina: ""
 ---
 
@@ -29,7 +29,7 @@ Se, da una parte, queste figure sono impegnate 24/7, ce ne sono altre che vengon
 
 Tutti sono chiamati ad adempiere ai doveri legati alla propria vocazione: chi è stato scoperto per caso nel fiore del suo talento, chi si è già fatto una propria identità, chi non credeva neanche di avere troppa competenza in materia. Una cosa è certa: sarebbe stato meglio non rendere note le proprie abilità! Non sarà un impegno logorante nel tempo ma sicuramente estenuante a livello mentale e fisico soprattutto se si viene convocati a pochi giorni da un’esibizione.
 
-![](https://static.wixstatic.com/media/0a0d0f_62dc7ca326bf46649931f7c731cd27b5~mv2.png)
+![](/media/wix/0a0d0f_62dc7ca326bf46649931f7c731cd27b5.png)
 
 Se ci si spostasse nell’ambito di altre iniziative,come la realizzazione di uno spettacolo teatrale, tra i partecipanti al progetto si potrebbero scorgere alcune divinità, discese direttamente dall’Olimpo, dagli innumerevoli privilegi e guarentigie. Infatti, al limite dell’immaginario, quasi al pari della *cena trimalchionis*, si levano canti di gioia alla loro venuta. Se ci si sta chiedendo chi mai possa essere così tanto atteso, la risposta è da cercarsi in un organo istituzionale che insegna i fondamenti pratici e teorici della musica: il conservatorio. Tra i diritti che spettano ai musicisti che frequentano tale istituzione oltre a quella liceale, si nota la possibilità di apporre firma d’uscita in anticipo senza subire alcuna ramanzina da parte dei professori oppure un’eventuale modifica del calendario *ad hoc* in base alle loro esigenze in sede di avvio del progetto.
 

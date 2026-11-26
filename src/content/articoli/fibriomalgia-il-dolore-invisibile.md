@@ -5,7 +5,7 @@ autori:
   - "Arianna Labate"
 rubriche:
   - benessere-fisico
-copertina: "https://static.wixstatic.com/media/0a0d0f_34f50397706340a19c31bc4612279cbe~mv2.jpg"
+copertina: "/media/wix/0a0d0f_34f50397706340a19c31bc4612279cbe.jpg"
 alt_copertina: ""
 ---
 

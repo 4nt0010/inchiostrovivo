@@ -6,7 +6,7 @@ autori:
   - "Giulia Cucci"
 rubriche:
   - la-nostra-scuola
-copertina: "https://static.wixstatic.com/media/0a0d0f_9c9ee112f9f7424eb22fec84bb767cf4~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_9c9ee112f9f7424eb22fec84bb767cf4.jpg"
 alt_copertina: ""
 ---
 
@@ -30,20 +30,20 @@ Ringraziamo caldamente e affettuosamente il direttore di Canale 7, Gianni Tanzar
 
 Ci auguriamo che questa esperienza, visto il grande successo e il grande entusiasmo, anche essendo stata unica, possa essere ripetibile, magari il prossimo anno. Noi non aspettiamo altro!
 
-![](https://static.wixstatic.com/media/0a0d0f_9c9ee112f9f7424eb22fec84bb767cf4~mv2.jpeg)
+![](/media/wix/0a0d0f_9c9ee112f9f7424eb22fec84bb767cf4.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_181f34aab3284f968c5ae68ce4ffe025~mv2.jpeg)
+![](/media/wix/0a0d0f_181f34aab3284f968c5ae68ce4ffe025.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_7b09f682528a4023b4bf893a0309c9a9~mv2.jpeg)
+![](/media/wix/0a0d0f_7b09f682528a4023b4bf893a0309c9a9.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_1e9996fb95ab4271bd574cec0eb93218~mv2.jpeg)
+![](/media/wix/0a0d0f_1e9996fb95ab4271bd574cec0eb93218.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_86b67679dcc1438e8c0d729d18749fe8~mv2.jpeg)
+![](/media/wix/0a0d0f_86b67679dcc1438e8c0d729d18749fe8.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_c3ffe8ff200e488aa1984e2e4cf6ca7e~mv2.jpeg)
+![](/media/wix/0a0d0f_c3ffe8ff200e488aa1984e2e4cf6ca7e.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_dff1eb314cc14deda86cd38fe17fca30~mv2.jpeg)
+![](/media/wix/0a0d0f_dff1eb314cc14deda86cd38fe17fca30.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_3165e43478c54459b8a583354cd760df~mv2.jpeg)
+![](/media/wix/0a0d0f_3165e43478c54459b8a583354cd760df.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_1cfde7002730432195e9cab92db0a9e7~mv2.jpeg)
+![](/media/wix/0a0d0f_1cfde7002730432195e9cab92db0a9e7.jpg)

@@ -7,7 +7,7 @@ autori:
 rubriche:
   - humanamente
   - cittadinanza-attiva
-copertina: "https://static.wixstatic.com/media/95ee78_6081bbe09d284d2993f90b7ffa609138~mv2.jpg"
+copertina: "/media/wix/95ee78_6081bbe09d284d2993f90b7ffa609138.jpg"
 alt_copertina: ""
 ---
 
@@ -37,20 +37,20 @@ La notevole affluenza di pubblico ha dimostrato che una vera “rivoluzione sens
 
 https://youtu.be/ESxx5c9D_Pg?si=NdYD-jHLP-KOWcQU
 
-![](https://static.wixstatic.com/media/95ee78_6081bbe09d284d2993f90b7ffa609138~mv2.jpg)
+![](/media/wix/95ee78_6081bbe09d284d2993f90b7ffa609138.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_f959445d6f2145c2b396b279810ab8dd~mv2.jpg)
+![](/media/wix/95ee78_f959445d6f2145c2b396b279810ab8dd.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_ccaeed3dc08c4d4daf2875cf2d8b4887~mv2.jpg)
+![](/media/wix/95ee78_ccaeed3dc08c4d4daf2875cf2d8b4887.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_41f1a0b0831f47a2a587c297a824a97e~mv2.jpg)
+![](/media/wix/95ee78_41f1a0b0831f47a2a587c297a824a97e.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_1f7c83e7f6a34d058aa4072af93c3c6a~mv2.jpg)
+![](/media/wix/95ee78_1f7c83e7f6a34d058aa4072af93c3c6a.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_a6a8b9fcaa5144acbd914cde05aece87~mv2.jpg)
+![](/media/wix/95ee78_a6a8b9fcaa5144acbd914cde05aece87.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_a3a7aaa6c9274ca6885f305f3a21090c~mv2.jpg)
+![](/media/wix/95ee78_a3a7aaa6c9274ca6885f305f3a21090c.jpg)
 
-![](https://static.wixstatic.com/media/95ee78_b01c1d23c3d54e52923d6593a2bc699f~mv2.jpg)
+![](/media/wix/95ee78_b01c1d23c3d54e52923d6593a2bc699f.jpg)
 
 *Fotoservizio di Antonio Laguardia*

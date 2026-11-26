@@ -5,7 +5,7 @@ autori:
   - "Francesca Bianchi"
 rubriche:
   - progettare-l-esistenza
-copertina: "https://static.wixstatic.com/media/0a0d0f_ab72e16d1abb4255bccd518bee3aceff~mv2.png"
+copertina: "/media/wix/0a0d0f_ab72e16d1abb4255bccd518bee3aceff.png"
 alt_copertina: ""
 ---
 

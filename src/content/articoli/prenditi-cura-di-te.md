@@ -5,13 +5,13 @@ autori:
   - "Giulia Cucci"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_fc7781fd1ae34d448f7bbfba63d5819f~mv2.jpg"
+copertina: "/media/wix/0a0d0f_fc7781fd1ae34d448f7bbfba63d5819f.jpg"
 alt_copertina: ""
 ---
 
 Viviamo nell’era delle apparenze, nella società della perfezione, della falsità, del confronto, del giudizio, dove il valore delle persone sembra essere misurato in risultati, prestazioni, immagini e numeri. Stare al mondo e stare al passo con il mondo è diventato molto complicato: siamo schiacciati da aspettative silenti, il fallimento e le fragilità non sono minimamente contemplate, bisogna essere sempre sul pezzo e andare avanti.
 
-![](https://static.wixstatic.com/media/0a0d0f_fc7781fd1ae34d448f7bbfba63d5819f~mv2.jpg)
+![](/media/wix/0a0d0f_fc7781fd1ae34d448f7bbfba63d5819f.jpg)
 
 Va avanti non chi è più forte, ma chi riesce a mascherarsi meglio. [Il](http://meglio.il) nostro essere dipende dalla maschera che decidiamo di indossare e da quanto fermamente riusciamo a mantenerla.
 

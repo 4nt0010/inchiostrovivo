@@ -6,7 +6,7 @@ autori:
   - "Giorgia Gentile"
 rubriche:
   - musica
-copertina: "https://static.wixstatic.com/media/0a0d0f_ac009b4b3e384366aecbb71f4b774391~mv2.jpg"
+copertina: "/media/wix/0a0d0f_ac009b4b3e384366aecbb71f4b774391.jpg"
 alt_copertina: ""
 ---
 
@@ -16,7 +16,7 @@ Tra il blues, il soul, il cantautorato italiano e il rock degli anni ‘70, e il
 
 Negli anni ‘70, artisti come **Pino Daniele**, **Lucio Dalla** e **Fabrizio De Andrè** musicavano la figura femminile rendendola protagonista, rispettandola e sottolineandone la bellezza, sotto ogni punto di vista e in ogni sfumatura.
 
-![](https://static.wixstatic.com/media/0a0d0f_ac009b4b3e384366aecbb71f4b774391~mv2.jpg)
+![](/media/wix/0a0d0f_ac009b4b3e384366aecbb71f4b774391.jpg)
 
 Cantavano di lei come simbolo di forza e delicatezza, portatrice di luce e salvezza. La descrivevano alludendo all’aspetto fisico come espressione della sua bellezza interiore, non limitandosi a quella esteriore.
 
@@ -28,7 +28,7 @@ Molte di queste sminuiscono la donna, che non viene più vista come protagonista
 
 La figura femminile viene, quindi, ridotta al suo aspetto e al suo ruolo di compiacere un uomo, perdendo la sua soggettività e diventando un vero e proprio stereotipo, parte di un immaginario che esalta il potere maschile.
 
-![](https://static.wixstatic.com/media/0a0d0f_6dc265bf098145e8a8276c85cc0d7020~mv2.jpg)
+![](/media/wix/0a0d0f_6dc265bf098145e8a8276c85cc0d7020.jpg)
 
 Nei generi trap e rap, però, emergono anche canzoni profonde, nei cui testi la donna appare in strofe e versi dolci e rispettosi: in alcuni casi, sono gli stessi artisti che hanno scritto testi offensivi a contraddirsi, pubblicando canzoni che vanno contro l’idea che avevano dimostrato di avere precedentemente. Tra questi artisti americani molto noti e amati, come **Travis Scott**, **Future**, **Drake**, artisti UK drill come **Central Cee**, ma anche italiani della new wave come **Artie 5ive** e **Tony Boy** per citarne alcuni.
 

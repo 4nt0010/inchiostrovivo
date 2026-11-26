@@ -6,7 +6,7 @@ autori:
   - "Piergiorgio Aversa"
 rubriche:
   - letteratura
-copertina: "https://static.wixstatic.com/media/0a0d0f_c791a3354f5140df993118eebc139c3b~mv2.jpg"
+copertina: "/media/wix/0a0d0f_c791a3354f5140df993118eebc139c3b.jpg"
 alt_copertina: ""
 ---
 

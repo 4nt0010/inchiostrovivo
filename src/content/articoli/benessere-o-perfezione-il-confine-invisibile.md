@@ -6,7 +6,7 @@ autori:
 rubriche:
   - benessere-fisico
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_2a39dd159b824bd7bc4eb4d55ce448da~mv2.png"
+copertina: "/media/wix/0a0d0f_2a39dd159b824bd7bc4eb4d55ce448da.png"
 alt_copertina: ""
 ---
 

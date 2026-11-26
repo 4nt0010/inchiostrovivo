@@ -6,7 +6,7 @@ autori:
   - "Giusy Brunetti"
 rubriche:
   - natura-e-ambiente
-copertina: "https://static.wixstatic.com/media/0a0d0f_e6c8d3875d944ce39e0cd39a024b1e20~mv2.jpg"
+copertina: "/media/wix/0a0d0f_e6c8d3875d944ce39e0cd39a024b1e20.jpg"
 alt_copertina: ""
 ---
 
@@ -14,7 +14,7 @@ La vista dei paesaggi naturali non può non trasmettere una sensazione di meravi
 
 Al cominciare dall’uomo primitivo e dal suo bisogno di stanziarsi, l’uomo è intervenuto sullo spazio naturale, modificandolo in maniera crescente, fino al giorno d’oggi in cui la presenza umana ha preso il sopravvento, danneggiando irrimediabilmente l’ambiente. Ormai si sente parlare quotidianamente di cambiamento climatico, inquinamento e altre questioni legate all’ambiente. Una delle industrie che ha più impatto sull'ambiente è quella della moda che si classifica come la seconda più inquinante al mondo subito dopo quella dei combustibili fossili. Il motivo principale per cui è diventata così dannosa, e di cui si è iniziato a denunciare negli ultimi anni il potenziale negativo, è il *consumismo*, caratteristica specifica della società odierna. Alla base del consumismo c’è una tendenza a volere più di quel che si può avere. Si può spiegare brevemente come funziona attraverso un esempio: un individuo compra una felpa alla moda, la indossa per 2 o 3 volte e, poco dopo, la abbandona in un armadio. La causa di questo fenomeno è data dal sopraggiungere di nuove tendenze, che saranno soggette alla stessa fine. Attraverso il consumismo, molte risorse primarie, tra cui l’acqua che già scarseggia, vengono sprecate inutilmente, quando potrebbero essere impiegate per fini più utili o per chi ne ha realmente bisogno. La “necessità” di avere sempre più capi alla moda, spesso influenzata da pubblicità e pratiche di marketing mirate, ha provocato la diffusione del *fast fashion*: un sistema che produce vestiti a basso costo, copiando le ultime tendenze, e mettendole subito sul mercato per sfruttare l'attrazione del momento. Il fast fashion è responsabile del 10% del consumo globale di acqua: per realizzare una sola maglietta di cotone si impiegano circa 2700 litri d’acqua, sufficienti a soddisfare il fabbisogno idrico di una persona per oltre due anni. È inoltre responsabile del 10% delle emissioni mondiali di CO2, superando addirittura le emissioni generate dai voli internazionali e dal trasporto marittimo. L’impatto negativo che ha questa pratica è collegato
 
-![](https://static.wixstatic.com/media/0a0d0f_e6c8d3875d944ce39e0cd39a024b1e20~mv2.jpg)
+![](/media/wix/0a0d0f_e6c8d3875d944ce39e0cd39a024b1e20.jpg)
 
 *Il Ghana sommerso da montagne di vestiti usati*
 
@@ -24,7 +24,7 @@ La società tende ad assumere un atteggiamento di indifferenza, sottovalutando l
 
 Fortunatamente esistono artisti di fama mondiale che utilizzano la propria voce per sensibilizzare e promuovere iniziative sostenibili. Un esempio è Billie Eilish che, insieme a sua
 
-![](https://static.wixstatic.com/media/0a0d0f_dd1d44275dd7453d8a7f50c470f6d43f~mv2.png)
+![](/media/wix/0a0d0f_dd1d44275dd7453d8a7f50c470f6d43f.png)
 
 *Il logo dell'associazione fondata da Billie Eilish*
 

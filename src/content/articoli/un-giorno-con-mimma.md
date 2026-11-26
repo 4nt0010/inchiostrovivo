@@ -5,7 +5,7 @@ autori:
   - "Mariantonietta Neglie"
 rubriche:
   - voci-di-corridoio
-copertina: "https://static.wixstatic.com/media/0a0d0f_535bfed4d2e941609d19a8a79672bf39~mv2.jpg"
+copertina: "/media/wix/0a0d0f_535bfed4d2e941609d19a8a79672bf39.jpg"
 alt_copertina: ""
 ---
 

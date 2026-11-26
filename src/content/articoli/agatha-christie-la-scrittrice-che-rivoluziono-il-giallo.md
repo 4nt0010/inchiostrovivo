@@ -6,7 +6,7 @@ autori:
   - "Pierluigi Ricco"
 rubriche:
   - letteratura
-copertina: "https://static.wixstatic.com/media/0a0d0f_c8d009f343d44e02a9e556aad2d4691b~mv2.jpg"
+copertina: "/media/wix/0a0d0f_c8d009f343d44e02a9e556aad2d4691b.jpg"
 alt_copertina: ""
 ---
 
@@ -18,7 +18,7 @@ Nel 1902 venne inviata a ricevere un’istruzione formale presso la Scuola per r
 
 Al primo, l'infallibile investigatore belga, dedicò 33 romanzi e 54 racconti, in cui lui ha impegnato le sue “celluline grigie” (cit.) per smascherare pericolosi criminali in giro per l’Europa. Il più famoso romanzo con protagonista Hercule Poirot è indubbiamente “Assassinio sull’Orient Express” (*Murder on the Orient Express*), con le sue oltre 50 milioni di copie vendute; non faccio spoiler, ma il finale di questo romanzo è stato uno dei più audaci e discussi nella storia del Giallo!
 
-![](https://static.wixstatic.com/media/0a0d0f_c8d009f343d44e02a9e556aad2d4691b~mv2.jpg)
+![](/media/wix/0a0d0f_c8d009f343d44e02a9e556aad2d4691b.jpg)
 
 A Miss Jane Marple, più comunemente nota come Miss Marple, la Christie dedicò 12 romanzi e 20 racconti, il più famoso dei quali è “C’è un cadavere in biblioteca”, di cui sono state vendute tra le 10 e le 15 milioni di copie. I romanzi che hanno come protagonista l’insospettabile “zitella” (cit.) di St. Mary Mead puntano a dimostrare che anche nell’ambiente apparentemente innocuo di questo paesino rurale, possono essere compiuti i delitti più efferati.
 

@@ -5,11 +5,11 @@ autori:
   - "Pierluigi Ricco"
 rubriche:
   - la-grande-storia
-copertina: "https://static.wixstatic.com/media/0a0d0f_ac22e24aedfe49219afe431ec8bb2430~mv2.jpg"
+copertina: "/media/wix/0a0d0f_ac22e24aedfe49219afe431ec8bb2430.jpg"
 alt_copertina: ""
 ---
 
-![](https://static.wixstatic.com/media/0a0d0f_63e72b4cbef8498aa9a64f37d47aa528~mv2.jpg)
+![](/media/wix/0a0d0f_63e72b4cbef8498aa9a64f37d47aa528.jpg)
 
 *Memoriale di Amburgo*
 
@@ -17,7 +17,7 @@ Spesso, quando si parla di Storia, viene facilmente da pensare alle grandi azion
 
 Vi è mai capitato di parlare liberamente del vostro dissenso nei confronti dell’autorità? Questo in molti Paesi del mondo è, almeno sulla carta, possibile senza alcuna conseguenza. Se invece decidiamo di addentrarci nei meandri della storia, capiamo che noi siamo molto fortunati a vivere in questo posto e in questo periodo storico, e ce lo dimostra chiaramente la storia della “Rosa Bianca”, un gruppo di amici che durante la Seconda Guerra Mondiale pubblicò una serie di manifesti in opposizione al nazismo, tra il 1942 e il 1943.
 
-![](https://static.wixstatic.com/media/0a0d0f_ac22e24aedfe49219afe431ec8bb2430~mv2.jpg)
+![](/media/wix/0a0d0f_ac22e24aedfe49219afe431ec8bb2430.jpg)
 
 *Monumento all'Università Ludwig Maximilian di Monaco, dedicato al gruppo della Rosa Bianca*
 

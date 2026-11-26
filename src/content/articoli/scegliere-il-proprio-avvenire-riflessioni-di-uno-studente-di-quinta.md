@@ -5,7 +5,7 @@ autori:
   - "Filippo Sforza"
 rubriche:
   - progettare-l-esistenza
-copertina: "https://static.wixstatic.com/media/0a0d0f_8382b2b3a0c64c08b9fb3f5a8e5ac8e1~mv2.png"
+copertina: "/media/wix/0a0d0f_8382b2b3a0c64c08b9fb3f5a8e5ac8e1.png"
 alt_copertina: ""
 ---
 

@@ -5,7 +5,7 @@ autori:
   - "Onofrio Vinciguerra"
 rubriche:
   - musica
-copertina: "https://static.wixstatic.com/media/0a0d0f_01275b58d93e48219810a70b669b759b~mv2.jpg"
+copertina: "/media/wix/0a0d0f_01275b58d93e48219810a70b669b759b.jpg"
 alt_copertina: ""
 ---
 
@@ -21,4 +21,4 @@ La quarta serata, dedicata alle cover e ai duetti, ha visto Ditonellapiaga e Ton
 
 Durante la finale, infine, una delle immagini più trasformate in meme è stata quella dell’ingresso scenografico di Andrea Bocelli. L’orchestra esegue il tema musicale de *Il Gladiatore*, mentre la telecamera si sposta all’esterno del Teatro Ariston. Bocelli appare in sella a un cavallo bianco, in una scena dal forte impatto cinematografico. Poco dopo scende da cavallo e, accompagnato da Carlo Conti, raggiunge il palco dell’Ariston dove, al pianoforte e introdotto dalla voce di Pippo Baudo, interpreta *Il mare calmo della sera*, il brano con cui trionfò al Festival nel 1994 nella categoria Nuove Proposte. Se il palco dell’Ariston resta il cuore del Festival, i social continuano a rappresentare la sua eco più immediata e creativa. Meme, battute e immagini virali raccontano il Festival da un punto di vista diverso, trasformando ogni dettaglio in un momento condiviso. Ed è proprio in questo dialogo continuo tra televisione e rete che Sanremo dimostra, ancora una volta, di essere molto più di una semplice gara musicale: è un grande racconto collettivo che vive e si reinventa anche online.
 
-![](https://static.wixstatic.com/media/0a0d0f_01275b58d93e48219810a70b669b759b~mv2.jpg)
+![](/media/wix/0a0d0f_01275b58d93e48219810a70b669b759b.jpg)

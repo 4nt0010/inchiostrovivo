@@ -7,7 +7,7 @@ autori:
   - "Pierluigi Ricco"
 rubriche:
   - teatro
-copertina: "https://static.wixstatic.com/media/0a0d0f_641cd668360846e6802f487ed84b7d75~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_641cd668360846e6802f487ed84b7d75.jpg"
 alt_copertina: ""
 ---
 
@@ -17,7 +17,7 @@ Massimo Dapporto, nato a Milano l’8 agosto 1945 e vincitore del David di Donat
 
 Fabio Troiano, nato il 10 ottobre 1974 a Carmagnola, è noto per aver interpretato i ruoli di Manolo in “Cado dalle Nubi (2009) e di Angelo in “Dopo Mezzanotte” (2004). In “Pirandello Pulp” ha il ruolo di Carmine, un giovane “tecnico” che viene inviato per affiancare Maurizio, al posto di un’intera squadra come lui si aspettava. Carmine è un giovane irrequieto e innovatore che desidera mettere in discussione i classici; potremmo dire che lui e Maurizio siano proprio agli antipodi. E difatti quest’ultimo non perde mai l’occasione di dimostrare l’astio che prova nei suoi confronti.
 
-![](https://static.wixstatic.com/media/0a0d0f_f8b25dbf0bd74072b64673c1f935816a~mv2.jpeg)
+![](/media/wix/0a0d0f_f8b25dbf0bd74072b64673c1f935816a.jpg)
 
 La redazione di Inchiostro Vivo ha avuto la fortuna di poter intervistare gli attori poco prima dello spettacolo, e il responso è stato totalmente positivo! Abbiamo visto da parte degli attori un vivo interesse per il nostro lavoro, e una profonda fiducia nei giovani, che ha detta dei due attori rappresentano il futuro.
 
@@ -35,4 +35,4 @@ Gli attori sono dell’opinione che rappresentare personaggi molto diversi dalla
 
 Quest’intervista ci ha lasciato grandi insegnamenti, poiché abbiamo avuto la singolare opportunità di discorrere con delle figure importanti del mondo dello spettacolo, quali Fabio Troiano e Massimo Dapporto, che ci hanno fornito diversi spunti di riflessione grazie alla loro esperienza nel settore e al loro desiderio di permetterci di diventare una nuova generazione di critici teatrali, figure che negli ultimi anni ha perso importanza in seguito all’avvento delle nuove tecnologie che hanno oscurato il mondo del teatro, parte così grande della nostra cultura e della nostra storia.
 
-![](https://static.wixstatic.com/media/0a0d0f_309154bb750b48d9ac38b4c8332fb419~mv2.jpeg)
+![](/media/wix/0a0d0f_309154bb750b48d9ac38b4c8332fb419.jpg)

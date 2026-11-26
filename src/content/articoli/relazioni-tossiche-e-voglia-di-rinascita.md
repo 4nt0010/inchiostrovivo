@@ -5,7 +5,7 @@ autori:
   - "Annachiara Cannone"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_de9bbe97d6ca4a5fb8fcdd9124f7bf56~mv2.jpg"
+copertina: "/media/wix/0a0d0f_de9bbe97d6ca4a5fb8fcdd9124f7bf56.jpg"
 alt_copertina: ""
 ---
 

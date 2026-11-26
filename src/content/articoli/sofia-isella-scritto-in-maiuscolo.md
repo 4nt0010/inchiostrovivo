@@ -5,7 +5,7 @@ autori:
   - "Giusy Brunetti"
 rubriche:
   - musica
-copertina: "https://static.wixstatic.com/media/0a0d0f_570f63235e484d0db5e5d4898ce1e9cd~mv2.jpg"
+copertina: "/media/wix/0a0d0f_570f63235e484d0db5e5d4898ce1e9cd.jpg"
 alt_copertina: ""
 ---
 

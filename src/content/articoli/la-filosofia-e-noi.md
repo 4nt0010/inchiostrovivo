@@ -7,7 +7,7 @@ autori:
   - "Angela Martucci"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_bd547d3a69304f3bb3c8ae58a84ae444~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_bd547d3a69304f3bb3c8ae58a84ae444.jpg"
 alt_copertina: ""
 ---
 
@@ -17,7 +17,7 @@ La maggior parte delle domande che ci poniamo sono le stesse a cui la filosofia 
 
 prova tutt’oggi a trovare risposte. Molti giovani, nel momento in cui si approcciano per la prima volta alla filosofia, assorbono passivamente pensieri che impediscono loro di comprendere a fondo ed entrare in autentica sintonia con la profondità che si cela dietro questa affascinante e complessa disciplina.
 
-![](https://static.wixstatic.com/media/0a0d0f_bd547d3a69304f3bb3c8ae58a84ae444~mv2.jpeg)
+![](/media/wix/0a0d0f_bd547d3a69304f3bb3c8ae58a84ae444.jpg)
 
 *Raffaello, La scuola di Atene, 1509, Roma, Musei Vaticani*
 

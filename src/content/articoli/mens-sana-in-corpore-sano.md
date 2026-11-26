@@ -5,7 +5,7 @@ autori:
   - "Sofia Di Bari"
 rubriche:
   - benessere-fisico
-copertina: "https://static.wixstatic.com/media/0a0d0f_80af0302c1d24b62b79b86e79fa8ecd5~mv2.png"
+copertina: "/media/wix/0a0d0f_80af0302c1d24b62b79b86e79fa8ecd5.png"
 alt_copertina: ""
 ---
 

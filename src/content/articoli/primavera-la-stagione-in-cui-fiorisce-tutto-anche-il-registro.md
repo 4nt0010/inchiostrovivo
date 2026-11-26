@@ -5,7 +5,7 @@ autori:
   - "Gaia Gentile"
 rubriche:
   - satira
-copertina: "https://static.wixstatic.com/media/0a0d0f_6c0963f2a3d04ea6ba1e3147cefe123f~mv2.png"
+copertina: "/media/wix/0a0d0f_6c0963f2a3d04ea6ba1e3147cefe123f.png"
 alt_copertina: ""
 ---
 

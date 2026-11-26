@@ -6,7 +6,7 @@ autori:
   - "Piergiorgio Aversa"
 rubriche:
   - urliamo-cio-che-ci-piace
-copertina: "https://static.wixstatic.com/media/0a0d0f_7e247ebdc9b04ad78bebb3829ca054d8~mv2.png"
+copertina: "/media/wix/0a0d0f_7e247ebdc9b04ad78bebb3829ca054d8.png"
 alt_copertina: ""
 ---
 

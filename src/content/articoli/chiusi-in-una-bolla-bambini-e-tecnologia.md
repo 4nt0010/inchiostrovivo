@@ -5,7 +5,7 @@ autori:
   - "Giusy Brunetti"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_55bca2d6307a485ab622f6cfd2a9b695~mv2.png"
+copertina: "/media/wix/0a0d0f_55bca2d6307a485ab622f6cfd2a9b695.png"
 alt_copertina: ""
 ---
 

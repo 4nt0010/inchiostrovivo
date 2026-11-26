@@ -6,7 +6,7 @@ autori:
 rubriche:
   - satira
   - la-nostra-scuola
-copertina: "https://static.wixstatic.com/media/0a0d0f_d709f026e54f44f1adf8310d4ff6f59a~mv2.png"
+copertina: "/media/wix/0a0d0f_d709f026e54f44f1adf8310d4ff6f59a.png"
 alt_copertina: ""
 ---
 

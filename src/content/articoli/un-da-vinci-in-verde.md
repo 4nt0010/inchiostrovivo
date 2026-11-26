@@ -5,7 +5,7 @@ autori:
   - "Onofrio Vinciguerra"
 rubriche:
   - natura-e-ambiente
-copertina: "https://static.wixstatic.com/media/0a0d0f_d51907f59d46434496c256cbfd31f980~mv2.jpg"
+copertina: "/media/wix/0a0d0f_d51907f59d46434496c256cbfd31f980.jpg"
 alt_copertina: ""
 ---
 
@@ -25,42 +25,42 @@ Per concludere la chiacchierata con la professoressa, non potevamo non chiederle
 
 Grazie all'impegno di tutti, il nostro liceo a subito una sensibile evoluzione: da luogo di apprendimento teorico a setting esperienziale, nonché spazio di cura, rispetto e attenzione verso l’ambiente. Le piante che lo abitano rappresentano un patrimonio vivo, capace di educare alla responsabilità, alla memoria e alla sostenibilità, insegnandoci ogni giorno quanto sia importante prendersi cura del mondo.
 
-![](https://static.wixstatic.com/media/0a0d0f_8e64b79fda8d49e3a7459c32a89c4b0f~mv2.jpg)
+![](/media/wix/0a0d0f_8e64b79fda8d49e3a7459c32a89c4b0f.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_c3b59664d3354d158669a352d7a7f72b~mv2.jpg)
+![](/media/wix/0a0d0f_c3b59664d3354d158669a352d7a7f72b.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_e3460448786e4028814381d4b1158c54~mv2.jpg)
+![](/media/wix/0a0d0f_e3460448786e4028814381d4b1158c54.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_0d6fe149b3564a08a59a375f62346583~mv2.jpg)
+![](/media/wix/0a0d0f_0d6fe149b3564a08a59a375f62346583.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_03807575cdfd44a9b4af72abecf5d428~mv2.jpg)
+![](/media/wix/0a0d0f_03807575cdfd44a9b4af72abecf5d428.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_e196fa376095482dbdf3ac8bae247f6e~mv2.jpg)
+![](/media/wix/0a0d0f_e196fa376095482dbdf3ac8bae247f6e.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_9339359435784309952eded348046d2d~mv2.jpg)
+![](/media/wix/0a0d0f_9339359435784309952eded348046d2d.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_bdb44cbcc2c14218b2a8271ecbdac38c~mv2.jpg)
+![](/media/wix/0a0d0f_bdb44cbcc2c14218b2a8271ecbdac38c.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_a73db14cda894e86b85ee04095b6306f~mv2.jpg)
+![](/media/wix/0a0d0f_a73db14cda894e86b85ee04095b6306f.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_cccc1014b4fc48e892ebb20dc27aacc6~mv2.jpg)
+![](/media/wix/0a0d0f_cccc1014b4fc48e892ebb20dc27aacc6.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_0c796255169546a8a8584bb8005f9ad6~mv2.jpg)
+![](/media/wix/0a0d0f_0c796255169546a8a8584bb8005f9ad6.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_6e3878eba4a74b7295347c35ee54e52f~mv2.jpg)
+![](/media/wix/0a0d0f_6e3878eba4a74b7295347c35ee54e52f.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_5d6d6d4dcd73482685f220ba63e35f4a~mv2.jpg)
+![](/media/wix/0a0d0f_5d6d6d4dcd73482685f220ba63e35f4a.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_293d5738243a4caba0d4c103b63695c8~mv2.jpg)
+![](/media/wix/0a0d0f_293d5738243a4caba0d4c103b63695c8.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_8a864116dff040bda34acd72e3a4cc4e~mv2.jpg)
+![](/media/wix/0a0d0f_8a864116dff040bda34acd72e3a4cc4e.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_0067a410debb40c4b18db660cdaab9e6~mv2.jpg)
+![](/media/wix/0a0d0f_0067a410debb40c4b18db660cdaab9e6.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_d244fc8090a743cba334d093ca1c927a~mv2.jpg)
+![](/media/wix/0a0d0f_d244fc8090a743cba334d093ca1c927a.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_ab16f262290c4587a3f2ac4fae7017d6~mv2.jpg)
+![](/media/wix/0a0d0f_ab16f262290c4587a3f2ac4fae7017d6.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_650e46cd75c94e00a26aea0c101edfa1~mv2.jpg)
+![](/media/wix/0a0d0f_650e46cd75c94e00a26aea0c101edfa1.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_570a8d0041314f2c9f2da422e582536c~mv2.jpg)
+![](/media/wix/0a0d0f_570a8d0041314f2c9f2da422e582536c.jpg)

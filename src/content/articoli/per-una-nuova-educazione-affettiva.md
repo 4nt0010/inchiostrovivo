@@ -6,7 +6,7 @@ autori:
 rubriche:
   - cittadinanza-attiva
   - humanamente
-copertina: "https://static.wixstatic.com/media/0a0d0f_fda7f2b0c7b942a6a67c097d5f95c752~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_fda7f2b0c7b942a6a67c097d5f95c752.jpg"
 alt_copertina: ""
 ---
 
@@ -22,7 +22,7 @@ Da poco la nostra scuola ha concluso un progetto sull’educazione sensibile con
 
 L’educazione affettiva è necessaria anche per cercare di fornire supporto a una generazione sempre più sola, che esce sempre meno e che si ama sempre meno. I giovani non sono educati all’amore, si sentono isolati e manifestano anche difficoltà ingenti nel relazionarsi con l’altro, segnale di una profonda crisi sociale che si può risolvere solo attraverso l’ascolto e la comprensione reciproca.
 
-![](https://static.wixstatic.com/media/0a0d0f_fda7f2b0c7b942a6a67c097d5f95c752~mv2.jpeg)
+![](/media/wix/0a0d0f_fda7f2b0c7b942a6a67c097d5f95c752.jpg)
 
 Educare all’affettività dovrebbe favorire le relazioni interpersonali tra noi adolescenti, insegnandoci a utilizzare l'empatia per comprendere e ad apprezzare gli altri; non dovrebbe, al contrario, essere uno strumento divisivo.
 

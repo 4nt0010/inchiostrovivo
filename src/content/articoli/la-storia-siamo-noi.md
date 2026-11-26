@@ -6,7 +6,7 @@ autori:
 rubriche:
   - la-grande-storia
   - cittadinanza-attiva
-copertina: "https://static.wixstatic.com/media/0a0d0f_d44bc10f08dc4789880a102b01cb5c89~mv2.png"
+copertina: "/media/wix/0a0d0f_d44bc10f08dc4789880a102b01cb5c89.png"
 alt_copertina: ""
 ---
 

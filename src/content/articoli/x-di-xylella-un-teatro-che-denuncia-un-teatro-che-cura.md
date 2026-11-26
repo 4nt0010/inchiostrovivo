@@ -6,7 +6,7 @@ autori:
   - "Sofia Di Bari"
 rubriche:
   - teatro
-copertina: "https://static.wixstatic.com/media/0a0d0f_7956e6171f744ec0b94cc6a552f46994~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_7956e6171f744ec0b94cc6a552f46994.jpg"
 alt_copertina: ""
 ---
 
@@ -36,8 +36,8 @@ Quello che resta è una sensazione. La sensazione che il teatro possa ancora ess
 
 Questo spettacolo ci insegna che a volte non serve capire tutto subito. A volte basta ascoltare, fermarsi e prendersi cura. E forse, oggi, è una delle cose più importanti che possiamo imparare.
 
-![](https://static.wixstatic.com/media/0a0d0f_bdb27391fc7f4a7a876a0c454932e1c6~mv2.jpeg)
+![](/media/wix/0a0d0f_bdb27391fc7f4a7a876a0c454932e1c6.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_1ae29ef91d224928b3a76143d92aa8d1~mv2.jpeg)
+![](/media/wix/0a0d0f_1ae29ef91d224928b3a76143d92aa8d1.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_e14f4ba5f5ca4d44aacd32736403cdb5~mv2.jpeg)
+![](/media/wix/0a0d0f_e14f4ba5f5ca4d44aacd32736403cdb5.jpg)

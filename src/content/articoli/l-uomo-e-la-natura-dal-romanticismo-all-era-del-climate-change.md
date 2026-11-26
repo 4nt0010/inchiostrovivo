@@ -7,7 +7,7 @@ rubriche:
   - natura-e-ambiente
   - letteratura
   - arte
-copertina: "https://static.wixstatic.com/media/0a0d0f_38955b61287045668aae977a3bfb749d~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_38955b61287045668aae977a3bfb749d.jpg"
 alt_copertina: ""
 ---
 
@@ -19,7 +19,7 @@ In ambito letterario, è impossibile non fare riferimento a Leopardi, il quale h
 
 Caspar David Friedrich è uno dei pittori che maggiormente ha saputo dare forma al rapporto tra uomo e natura. Egli reputa la natura come la manifestazione del divino, al cospetto del quale l'uomo si percepisce come infinitamente piccolo, privo di potere. Non assume né valore benigno, né uno negativo poiché essa è il luogo di riflessione e di comunicazione con l'Assoluto. Nel celebre dipinto *Il viandante sul mare di nebbia* l’artista
 
-![](https://static.wixstatic.com/media/0a0d0f_38955b61287045668aae977a3bfb749d~mv2.jpeg)
+![](/media/wix/0a0d0f_38955b61287045668aae977a3bfb749d.jpg)
 
 *Caspar David Friedrich, Il viandante sul mare di nebbia, 1818*
 

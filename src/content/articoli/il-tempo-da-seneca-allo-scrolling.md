@@ -5,7 +5,7 @@ autori:
   - "Sofia Casale"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_34133f91dca7469690f0f7726c56b67f~mv2.png"
+copertina: "/media/wix/0a0d0f_34133f91dca7469690f0f7726c56b67f.png"
 alt_copertina: ""
 ---
 

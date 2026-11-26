@@ -5,7 +5,7 @@ autori:
   - "Sofia Casale"
 rubriche:
   - letteratura
-copertina: "https://static.wixstatic.com/media/0a0d0f_e09f056ecd1a4818ab74f35d0a2fe44e~mv2.png"
+copertina: "/media/wix/0a0d0f_e09f056ecd1a4818ab74f35d0a2fe44e.png"
 alt_copertina: ""
 ---
 

@@ -5,7 +5,7 @@ autori:
   - "Lucrezia Buzzetta"
 rubriche:
   - filosofia-benessere-psicologia
-copertina: "https://static.wixstatic.com/media/0a0d0f_486458f88618473ab727abe125be1827~mv2.jpg"
+copertina: "/media/wix/0a0d0f_486458f88618473ab727abe125be1827.jpg"
 alt_copertina: ""
 ---
 

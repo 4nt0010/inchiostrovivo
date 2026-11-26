@@ -4,7 +4,7 @@ date: 2026-06-10T07:44:35.633Z
 autori:
   - "Sofia Russo"
 rubriche: []
-copertina: "https://static.wixstatic.com/media/0a0d0f_6fccb5df7d3e4f8399056154c544d983~mv2.jpg"
+copertina: "/media/wix/0a0d0f_6fccb5df7d3e4f8399056154c544d983.jpg"
 alt_copertina: ""
 ---
 
@@ -24,22 +24,22 @@ Questa manifestazione non è altro che un corteo musicale che si svolge nei corr
 
 “*Senza musica la vita sarebbe un errore*”, disse Friedrich Nietzsche, ed è per questo che, qui al Da Vinci, continuiamo a coltivarla in tutte le sue forme. Semiminime, crome, biscrome e semibiscrome potrebbero suonare non tanto familiari alle orecchie di alcuni ma, per altri, sono alla base di un’atmosfera travolgente che solo una sinfonia sa come descrivere. Anche se talvolta le prove parrebbero disturbare la quiete scolastica, la musica non si ferma poiché, come dice Platone, “*fa bene al cuore e all’anima*”.
 
-![](https://static.wixstatic.com/media/0a0d0f_6fccb5df7d3e4f8399056154c544d983~mv2.jpg)
+![](/media/wix/0a0d0f_6fccb5df7d3e4f8399056154c544d983.jpg)
 
 *Send Off a Palestine High School, Palestine, TXa.s. 2024/2025*
 
-![](https://static.wixstatic.com/media/0a0d0f_dbf809a82ce741bf8cd889bf60efa0e6~mv2.jpg)
+![](/media/wix/0a0d0f_dbf809a82ce741bf8cd889bf60efa0e6.jpg)
 
 *Co-Drum Feast 22..04.2026. Destinatari: badminton team Da Vinci*
 
-![](https://static.wixstatic.com/media/0a0d0f_5ff57e7c03ed4e9fb38cd346e6398452~mv2.jpg)
+![](/media/wix/0a0d0f_5ff57e7c03ed4e9fb38cd346e6398452.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_e3f6d0a35c954d478c66b011923f5624~mv2.jpg)
+![](/media/wix/0a0d0f_e3f6d0a35c954d478c66b011923f5624.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_4d38977df4e74dca9d7f31ee6260983b~mv2.jpg)
+![](/media/wix/0a0d0f_4d38977df4e74dca9d7f31ee6260983b.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_ed881942acbd4807a10decfc1cca5bc1~mv2.jpg)
+![](/media/wix/0a0d0f_ed881942acbd4807a10decfc1cca5bc1.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_aa13461dd83542b9b1cc52c9ce5f4fc9~mv2.jpg)
+![](/media/wix/0a0d0f_aa13461dd83542b9b1cc52c9ce5f4fc9.jpg)
 
 *19.12.2025. Evento inaugurale del gruppo MusicaMente Da Vinci*

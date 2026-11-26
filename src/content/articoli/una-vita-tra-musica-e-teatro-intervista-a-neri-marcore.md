@@ -5,13 +5,13 @@ autori:
   - "Alba Cannone"
 rubriche:
   - teatro
-copertina: "https://static.wixstatic.com/media/0a0d0f_84dc5e0cd87d4bf091946d60fa9aee6c~mv2.jpg"
+copertina: "/media/wix/0a0d0f_84dc5e0cd87d4bf091946d60fa9aee6c.jpg"
 alt_copertina: ""
 ---
 
 Il 29 novembre, grazie alla sinergia tra l’Amministrazione comunale e FasanoMusica, ai giovani e alle associazioni del territorio è stata offerta un’opportunità speciale: incontrare l’artista poliedrico **Neri Marcorè**, reduce dallo spettacolo “Doppia Coppia”, andato in scena la sera precedente al teatro Kennedy di Fasano nell'ambito della apprezzatissima rassegna concertistica che ormai 43 anni conferisce lustro alla nostra cittadina.
 
-![](https://static.wixstatic.com/media/0a0d0f_309de2d8a4f1403289d6e8be3527cffb~mv2.jpeg)
+![](/media/wix/0a0d0f_309de2d8a4f1403289d6e8be3527cffb.jpg)
 
 Lo spettacolo, che ha visto protagonisti il polistrumentista Domenico Mariorenzi, la violinista Anais Drago e la violoncellista Chiara Di Benedetto, oltre a Neri Marcorè, ha offerto lo spunto con cui l’assessore Cinzia Caroli ha aperto l’incontro.
 

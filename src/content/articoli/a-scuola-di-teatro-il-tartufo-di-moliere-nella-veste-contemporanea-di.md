@@ -7,7 +7,7 @@ autori:
   - "Giulia Cucci"
 rubriche:
   - teatro
-copertina: "https://static.wixstatic.com/media/0a0d0f_8d652d0e17454674b3010d4a3ee0235c~mv2.jpeg"
+copertina: "/media/wix/0a0d0f_8d652d0e17454674b3010d4a3ee0235c.jpg"
 alt_copertina: ""
 ---
 
@@ -29,6 +29,6 @@ L'opera ha conservato la sua attualità anche grazie alla bravura degli attori, 
 
 Tartufo dimostra come il teatro possa rappresentare ancora oggi un efficace strumento di denuncia e di riflessione. Attraverso la comicità e la satira lo spettacolo invita lo spettatore a guardare oltre le apparenze e a sviluppare uno sguardo critico su ciò che lo circonda. Uscendo dal teatro non resta solo il ricordo di una performance ben riuscita ma soprattutto un grande interrogativo su cui riflettere: quanto riusciamo a riconoscere l’ipocrisia quando si presenta davanti a noi? Cosa é realtà e cosa è solo apparenza e falsità?
 
-![](https://static.wixstatic.com/media/0a0d0f_6f7d3ab8857843e49b0185cffb217b39~mv2.jpeg)
+![](/media/wix/0a0d0f_6f7d3ab8857843e49b0185cffb217b39.jpg)
 
-![](https://static.wixstatic.com/media/0a0d0f_8d652d0e17454674b3010d4a3ee0235c~mv2.jpeg)
+![](/media/wix/0a0d0f_8d652d0e17454674b3010d4a3ee0235c.jpg)
