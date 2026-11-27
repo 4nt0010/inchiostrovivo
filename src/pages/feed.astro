@@ -6,7 +6,7 @@ import { articoli, data, elencoNomi } from "../lib/contenuti";
 const indirizzo = `${SITO.url}/rss.xml`;
 const ultimi = (await articoli()).slice(0, 5);
 ---
-<Base titolo="Feed RSS" descrizione={`Segui ${SITO.nome} con il feed RSS: i nuovi articoli arrivano da soli nella tua app di notizie.`}>
+<Base titolo="Feed RSS" noindex descrizione={`Segui ${SITO.nome} con il feed RSS: i nuovi articoli arrivano da soli nella tua app di notizie.`}>
   <div class="contenitore">
     <header class="pagina">
       <h1 class="tratto tratto-sx">Feed RSS</h1>

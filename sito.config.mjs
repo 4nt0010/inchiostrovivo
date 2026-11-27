@@ -7,6 +7,10 @@ export const SITO = {
   url: "https://www.inchiostrovivotobelive.it",
 
   nome: "Inchiostro Vivo",
+  // Altri nomi con cui il giornalino viene cercato (aiuta Google a riconoscerlo)
+  nomiAlternativi: ["Inchiostro Vivo ToBeLive", "Inchiostro Vivo blog", "Inchiostro Vivo Fasano"],
+  // Profili social ufficiali (Instagram, Facebook...): indirizzi completi, es. "https://www.instagram.com/nome/"
+  social: [],
   motto: "to be live",
   descrizione:
     "Il blog della redazione studentesca dell'IISS Leonardo da Vinci di Fasano: attualità, scuola, storia, arte, teatro, musica e benessere raccontati dagli studenti.",

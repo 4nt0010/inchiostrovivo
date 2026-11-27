@@ -45,7 +45,9 @@ const jsonld = [
     })),
     publisher: {
       "@type": "NewsMediaOrganization",
+      "@id": `${SITO.url}/#redazione`,
       name: SITO.nome,
+      url: `${SITO.url}/`,
       logo: { "@type": "ImageObject", url: `${SITO.url}/logo.png` },
     },
   },

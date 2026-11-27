@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 const { r, lista } = Astro.props;
 const descrizione =
-  r.data.descrizione || `Gli articoli della rubrica ${r.data.nome} di ${SITO.nome}, il blog degli studenti del ${SITO.scuola} di ${SITO.citta}.`;
+  r.data.descrizione || `Gli articoli della rubrica ${r.data.nome} di ${SITO.nome}, il blog degli studenti dell'${SITO.scuola} di ${SITO.citta}.`;
 const jsonld = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",

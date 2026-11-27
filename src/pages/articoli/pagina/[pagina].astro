@@ -24,6 +24,7 @@ const { lista, p, pagine } = Astro.props;
 <PaginaElenco
   titolo={`Articoli, pagina ${p}`}
   titoloSeo={`Articoli, pagina ${p} di ${pagine}`}
+  descrizioneSeo={`Archivio di ${SITO.nome}, pagina ${p} di ${pagine}: articoli della redazione studentesca dell'${SITO.scuola} di ${SITO.citta}.`}
   articoli={lista}
   precedente={p === 2 ? "/articoli/" : `/articoli/pagina/${p - 1}/`}
   successiva={p < pagine ? `/articoli/pagina/${p + 1}/` : undefined}

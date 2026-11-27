@@ -19,6 +19,7 @@ const jsonld = {
   titolo={au.nome}
   titoloSeo={`${au.nome}: articoli`}
   descrizione={`${n === 1 ? "L'articolo" : `Gli ${n} articoli`} di ${au.nome} per ${SITO.nome}.`}
+  descrizioneSeo={`${n === 1 ? "L'articolo" : `Gli ${n} articoli`} di ${au.nome} per ${SITO.nome}, il blog degli studenti dell'${SITO.scuola} di ${SITO.citta}.`}
   articoli={au.articoli}
   barra={false}
   jsonld={jsonld}

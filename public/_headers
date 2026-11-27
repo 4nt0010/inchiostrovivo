@@ -13,3 +13,12 @@
 /admin/*
   X-Robots-Tag: noindex
   Cache-Control: no-cache
+
+/rss.xml
+  X-Robots-Tag: noindex
+
+https://inchiostrovivo.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.inchiostrovivo.pages.dev/*
+  X-Robots-Tag: noindex

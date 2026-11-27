@@ -13,7 +13,7 @@ interface Props {
   jsonld?: object | object[];
 }
 const p = Astro.props;
-const titoloPagina = p.titolo ? `${p.titolo} | ${SITO.nome}` : `${SITO.nome}: il blog degli studenti del ${SITO.scuola} di ${SITO.citta}`;
+const titoloPagina = p.titolo ? `${p.titolo} | ${SITO.nome}` : `${SITO.nome} | Il blog degli studenti dell'${SITO.scuola} di ${SITO.citta}`;
 const grezza = (p.descrizione || SITO.descrizione).replace(/\s+/g, " ").trim();
 const descrizione = grezza.length <= 160 ? grezza : grezza.slice(0, 159).replace(/\s+\S*$/, "") + "…";
 const canonical = new URL(Astro.url.pathname, SITO.url).href;
@@ -27,7 +27,7 @@ const ld = p.jsonld ? (Array.isArray(p.jsonld) ? p.jsonld : [p.jsonld]) : [];
 <meta property="og:site_name" content={SITO.nome} />
 <meta property="og:locale" content="it_IT" />
 <meta property="og:type" content={p.tipo ?? "website"} />
-<meta property="og:title" content={p.titolo ?? SITO.nome} />
+<meta property="og:title" content={p.titolo ?? `${SITO.nome}, il blog degli studenti`} />
 <meta property="og:description" content={descrizione} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={img} />

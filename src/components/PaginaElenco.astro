@@ -8,6 +8,7 @@ interface Props {
   titolo: string;
   titoloSeo?: string;
   descrizione?: string;
+  descrizioneSeo?: string;
   articoli: Articolo[];
   precedente?: string;
   successiva?: string;
@@ -17,7 +18,7 @@ interface Props {
 }
 const p = Astro.props;
 ---
-<Base titolo={p.titoloSeo ?? p.titolo} descrizione={p.descrizione} jsonld={p.jsonld}>
+<Base titolo={p.titoloSeo ?? p.titolo} descrizione={p.descrizioneSeo ?? p.descrizione} jsonld={p.jsonld}>
   <div class="contenitore">
     <header class="testa-blog">
       <h1 class="tratto tratto-sx">{p.titolo}</h1>

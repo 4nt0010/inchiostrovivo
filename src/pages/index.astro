@@ -30,7 +30,10 @@ const jsonld = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${SITO.url}/#sito`,
     name: SITO.nome,
+    alternateName: SITO.nomiAlternativi,
+    publisher: { "@id": `${SITO.url}/#redazione` },
     url: SITO.url + "/",
     inLanguage: "it-IT",
     description: SITO.descrizione,
@@ -43,7 +46,10 @@ const jsonld = [
   {
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
+    "@id": `${SITO.url}/#redazione`,
     name: SITO.nome,
+    alternateName: SITO.nomiAlternativi,
+    ...(SITO.social.length ? { sameAs: SITO.social } : {}),
     url: SITO.url + "/",
     logo: `${SITO.url}/logo.png`,
     email: SITO.email,
@@ -85,7 +91,7 @@ const jsonld = [
         <button type="submit">Vai</button>
       </form>
       <div class="scheda-logo">
-        <h1><img src="/logo.webp" alt={`${SITO.nome}, ${SITO.motto}`} width="550" height="196" fetchpriority="high" /></h1>
+        <h1><img src="/logo.webp" alt={`${SITO.nome}, ${SITO.motto}`} width="550" height="196" fetchpriority="high" /><span class="nascosto"> – il blog degli studenti dell'{SITO.scuola} di {SITO.citta}</span></h1>
         <p>Il blog della redazione studentesca del {SITO.scuola} di {SITO.citta}</p>
         <a class="pulsante" href="/articoli/">Vai agli articoli!</a>
       </div>

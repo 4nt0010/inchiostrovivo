@@ -12,7 +12,7 @@ export default defineConfig({
   build: { format: "directory" },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes("/cerca/"),
+      filter: (page) => !page.includes("/cerca/") && !page.includes("/feed/"),
       // Data di ultima modifica degli articoli, utile a Google
       serialize(item) {
         const m = item.url.match(/\/articoli\/([^/]+)\/$/);
